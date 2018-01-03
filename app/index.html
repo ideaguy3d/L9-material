@@ -37,7 +37,8 @@
 	upgrade your browser</ato improve your experience.</p>
 <![endif]-->
 
-<md-nav-bar md-selected-nav-item="currentNavItem"
+<!-- Horizontal Navigation -->
+<md-nav-bar ng-show="coreEdhubState" md-selected-nav-item="currentNavItem"
             nav-bar-aria-label="navigation links">
 	<md-nav-item md-nav-sref="landing" name="home">
 		EdHub.co
@@ -148,6 +149,7 @@
 <script src="states/auth/ctrl.auth.js"></script>
 <script src="states/post/ctrl.post.js"></script>
 <script src="ui-prac/ctrl.ui.prac.js"></script>
+<script src="states/lab916/ctrl.lab916.js"></script>
 <!-- endbuild -->
 
 </body>

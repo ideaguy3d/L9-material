@@ -15,6 +15,12 @@ angular
             $stateProvider
                 .state('landing', {
                     url: '/',
+                    templateUrl: 'states/lab916/view.landing.html',
+                    controller: 'Lab916Ctrl',
+                    controllerAs: 'lab'
+                })
+                .state('edhub', {
+                    url: '/edhub',
                     templateUrl: 'states/landing/view.landing.html',
                     controller: 'LandingCtrl',
                     controllerAs: 'landing'

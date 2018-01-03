@@ -9,6 +9,7 @@
     angular.module('edhubJobsApp').controller('CoreCtrl', ['$scope',
         function ($scope) {
             $scope.ccCurrentUser = "";
+            $scope.coreEdhubState = false;
 
             $scope.ccSetCurrentUser = function(userEmail){
                 $scope.ccCurrentUser = userEmail;
