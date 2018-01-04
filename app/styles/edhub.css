@@ -2,6 +2,99 @@ body {
     padding: 0;
 }
 
+/********************************
+    -- L9 initial ui code --
+**********************************/
+
+.L9-text-center {
+    text-align: center;
+}
+
+.L9-text-right {
+    text-align: right;
+}
+
+.L9-text-left {
+    text-align: left;
+}
+
+.L9-w33 {
+    width: 33%;
+}
+
+.L9-hero-h1 {
+    font-size: 48px;
+    color: whitesmoke;
+}
+
+.L9-btn {
+    padding: 8px;
+}
+
+.L9-shadow1 {
+
+}
+
+.L9-Hero-landing {
+    height: 100%;
+}
+
+.L9-Hero-landing-629px {
+    height: auto;
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    .L9-Hero-landing-629px {
+        height: 629px;
+    }
+}
+
+.L9-bg-hero-img {
+    background-image: url(../images/hero-banner-3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: whitesmoke;
+    overflow: hidden;
+    padding: 24px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #fdb311;
+    text-align: center;
+    padding: 32px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a.L9-nav-logo {
+    float: left;
+    padding: 2px;
+}
+
+.topnav a.L9-nav-logo > img {
+    vertical-align: middle;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: #434343;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #fdb311;
+    color: white;
+}
+
 /**
     -- edhub anim prac --
 **/
@@ -42,29 +135,7 @@ body {
     left: 320px;
 }
 
-/********************************
-    -- edhub initial ui code --
-**********************************/
 
-.L9-text-center {
-    text-align: center;
-}
-
-.L9-text-right {
-    text-align: right;
-}
-
-.L9-text-left {
-    text-align: left;
-}
-
-.L9-w33 {
-    width: 33%;
-}
-
-.L9-Hero-landing {
-    height: 100%;
-}
 
 md-input-container.md-icon-float > ng-md-icon {
     top: 8px;

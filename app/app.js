@@ -13,7 +13,7 @@ angular.module('L9-app', [
             $stateProvider
                 .state('landing', {
                     url: '/',
-                    templateUrl: 'states/lab916/view.landing.html',
+                    templateUrl: 'states/lab916/view.lab916.html',
                     controller: 'Lab916Ctrl',
                     controllerAs: 'lab'
                 })
