@@ -2,9 +2,7 @@
  * Created by Julius Alvarado on 9/2/2017.
  */
 
-angular
-    .module('edhubJobsApp', [
-        'firebase',
+angular.module('L9-app', [
         'angular-md5',
         'ui.router',
         'ngMaterial',

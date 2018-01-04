@@ -6,7 +6,7 @@
 (function () {
     "use strict";
 
-    angular.module('edhubJobsApp').controller('CoreCtrl', ['$scope',
+    angular.module('L9-app').controller('CoreCtrl', ['$scope',
         function ($scope) {
             $scope.ccCurrentUser = "";
             $scope.coreEdhubState = false;
