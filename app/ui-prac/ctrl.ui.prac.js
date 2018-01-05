@@ -5,7 +5,7 @@
 (function(){
     "use strict";
 
-    angular.module('edhubJobsApp').controller('uiPracCtrl', [
+    angular.module('L9-app').controller('uiPracCtrl', [
         function () {
             const vm = this;
             vm.toggle = false;
