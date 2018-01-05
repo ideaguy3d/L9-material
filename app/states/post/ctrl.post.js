@@ -3,7 +3,7 @@
  */
 
 
-angular.module('edhubJobsApp').controller('PostJobCtrl', ['edhubJobPostService',
+angular.module('L9-app').controller('PostJobCtrl', ['edhubJobPostService',
     function (edhubJobPostService) {
         const vm = this;
         vm.progressMessage = "Your Progress";

@@ -5,7 +5,7 @@
 (function () {
     "use strict";
 
-    angular.module('edhubJobsApp').factory('edhubAuthService', ['$firebaseAuth',
+    angular.module('L9-app').factory('edhubAuthService', ['$firebaseAuth',
         function ($firebaseAuth) {
             const userSignup = function (email, pw) {
                 return $firebaseAuth().$createUserWithEmailAndPassword(email, pw);

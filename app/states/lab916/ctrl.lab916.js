@@ -31,6 +31,7 @@
             vm.kleinQuote = "It’s rare to find Amazon marketers who understand ROI and actually act on it. LAB916 knows PPC, they know design, and more importantly, they execute. They don’t care about worthless vanity metrics, they care about making you more money.";
             vm.sellerCentralImg1 = "https://static1.squarespace.com/static/58486f891b631beb1bea6ebe/t/5855be2bd482e9ab4654218c/1482014253332/static1.squarespace.jpg?format=1500w"
 
+            vm.whatWeDo = "We work hard to make sure your products get the sales that they deserve on the Amazon marketplace. Our services include Content Optimization, Advertising, and Channel Management: three key elements to make your product rise above the competition.";
         }
     ]);
 }());

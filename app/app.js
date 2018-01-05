@@ -17,34 +17,6 @@ angular.module('L9-app', [
                     controller: 'Lab916Ctrl',
                     controllerAs: 'lab'
                 })
-                .state('edhub', {
-                    url: '/edhub',
-                    templateUrl: 'states/landing/view.landing.html',
-                    controller: 'LandingCtrl',
-                    controllerAs: 'landing'
-                })
-                .state('signup', {
-                    url: '/signup',
-                    templateUrl: 'states/auth/view.signup.html',
-                    controller: 'AuthCtrl',
-                    controllerAs: 'signup'
-                })
-                .state('login', {
-                    url: '/login',
-                    templateUrl: 'states/auth/view.login.html',
-                    controller: 'AuthCtrl',
-                    controllerAs: 'login'
-                })
-                .state('post', {
-                    url: '/post',
-                    templateUrl: 'states/post/view.post.html',
-                    controller: 'PostJobCtrl',
-                    controllerAs: 'post'
-                })
-                .state('apply', {
-                    url: '/apply',
-                    templateUrl: 'states/apply/view.apply.html'
-                })
                 .state('uit1', {
                     url: '/uit1',
                     templateUrl: 'ui-prac/uit1.html',
@@ -63,6 +35,6 @@ angular.module('L9-app', [
                 storageBucket: "edhub-jobs.appspot.com",
                 messagingSenderId: "743478741402"
             };
-            firebase.initializeApp(config);
+            // firebase.initializeApp(config);
         }
     ]);

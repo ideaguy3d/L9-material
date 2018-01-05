@@ -5,11 +5,9 @@
     <title>Lab916</title>
 
     <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <meta name="description" content="The Education Jobs site">
+    <meta name="description" content="Amazon Optimization Specialists">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />-->
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -27,6 +25,10 @@
         [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
             display: none !important;
         }
+
+        html, body {
+            background-color: #ffffff !important;
+        }
     </style>
 </head>
 
@@ -36,29 +38,6 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">
     upgrade your browser</ato improve your experience.</p>
 <![endif]-->
-
-<!-- coreEdhubState Horizontal Navigation -->
-<md-nav-bar ng-show="coreEdhubState" md-selected-nav-item="currentNavItem"
-            nav-bar-aria-label="navigation links">
-    <md-nav-item md-nav-sref="landing" name="home">
-        EdHub.co
-    </md-nav-item>
-    <!--You can also add options for the <code>ui-sref-opts</code> attribute.-->
-    <md-nav-item md-nav-sref="post" sref-opts="{reload:true, notify:true}">
-        Post a Job
-    </md-nav-item>
-    <md-nav-item ng-if="!ccCurrentUser" md-nav-sref="signup" name="signup">
-        Signup
-    </md-nav-item>
-    <!--You can also add options for the <code>ui-sref-opts</code> attribute.-->
-    <md-nav-item ng-if="!ccCurrentUser" md-nav-sref="login" sref-opts="{reload:true, notify:true}">
-        Login
-    </md-nav-item>
-    <md-subheader ng-if="ccCurrentUser" layout="column">
-        <ng-md-icon icon="perm_identity"></ng-md-icon>
-        {{ " Welcome " + ccCurrentUser }}
-    </md-subheader>
-</md-nav-bar>
 
 <!-- L9-material Horizontal navigation -->
 <div class="topnav" id="myTopnav">
@@ -79,20 +58,20 @@
 <ui-view></ui-view>
 
 <br>
+
 <!-- footer -->
-<div layout="row" layout-xs="column" style="background-color: whitesmoke;">
-    <!-- Left -->
-    <div flex layout-margin layout-padding>
-        <h1 class="text-center">
-            About Lab916
-        </h1>
-        <p>Built by <a href="http://julius3d.com" target="_blank">Lab916</a></p>
+<section layout="row" layout-align="space-around center" layout-sm="column" class="L9-footer-container">
+    <!-- 1st column -->
+    <div flex="50" layout-padding>
+        <h1 class="text-center"> <ng-md-icon icon="mail"></ng-md-icon> Subscribe to Lab916</h1>
+        <p>Built by <a href="http://lab916.com" target="_blank">Lab916</a></p>
         <p>We're still developing this app so we'll be adding more features and functionality </p>
     </div>
-    <!-- Middle -->
-    <div flex layout-margin layout-padding>
-        <h1>Lab916.com Progress</h1>
-        <ol>
+
+    <!-- 2nd column -->
+    <div flex layout-padding>
+        <p>Lab916.com Progress</p>
+        <ul class="L9-ul-none">
             <li>Code initial UI and basic Authentication, week of 9/10/17
                 <ng-md-icon icon="check"></ng-md-icon>
             </li>
@@ -108,18 +87,43 @@
             <li>Make UI even prettier for awesome UX, <i>near future</i>
                 <ng-md-icon icon="error"></ng-md-icon>
             </li>
-        </ol>
+        </ul>
     </div>
-    <!-- Right -->
-    <div flex layout-margin layout-padding>
-        <h1>Lab916 sites</h1>
-        <p><a href="http://site1.julius3d.com" target="_blank">Software Generalist</a></p>
-        <p><a href="http://material.julius3d.com" target="_blank">Material Design Specialist</a></p>
-        <p><a href="https://juliusproto.firebaseapp.com" target="_blank">Ninja Publishers Review</a></p>
-        <p><a href="https://tedfeed.firebaseapp.com" target="_blank">Ted Talks Video Feed</a>
-            <small> (still in development)</small>
-        </p>
-        <p><a href="http://julius3d.com" target="_blank">Julius3D.com</a></p>
+
+    <!-- 3rd column -->
+    <div flex layout-padding>
+        <p><a href="http://site1.julius3d.com" target="_blank">CONTACT US</a></p>
+        <p><a href="http://material.julius3d.com" target="_blank">ORDERING & PAYMENT</a></p>
+        <p><a href="https://juliusproto.firebaseapp.com" target="_blank">SHIPPING</a></p>
+        <p><a href="https://tedfeed.firebaseapp.com" target="_blank">RETURNS</a></p>
+        <p><a href="http://julius3d.com" target="_blank">FAQ</a></p>
+        <p><a href="http://julius3d.com" target="_blank">SIZING GUIDE</a></p>
+    </div>
+
+    <div flex layout-padding>
+            <p>WORK WITH US</p>
+            <p>PRIVACY POLICY</p>
+            <p>TERMS & CONDITIONS</p>
+            <p>PRESS ENQUIRIES</p>
+    </div>
+</section>
+
+<!-- Social Media Links -->
+<div layout="row" layout-sm="column" layout-align="center center" class="L9-footer-container">
+    <div flex="10">
+        <a href="#"> <ng-md-icon icon="facebook"></ng-md-icon> </a>
+    </div>
+    <div flex="10">
+        <a href="#"> <ng-md-icon icon="twitter"></ng-md-icon> </a>
+    </div>
+    <div flex="10">
+        <a href="#"> <ng-md-icon icon="linkedin"></ng-md-icon> </a>
+    </div>
+</div>
+
+<div layout="row" layout-sm="column" layout-align="center center" class="L9-footer-container L9-text-center">
+    <div flex="60">
+        <h1>&copy; Lab916 Sacramento, California</h1>
     </div>
 </div>
 
@@ -157,7 +161,7 @@
 <!--<script src="services/ser.auth.js"></script>-->
 <!--<script src="services/ser.job.post.js"></script>-->
 <!-- controllers -->
-<!--<script src="core.ctrl.js"></script>-->
+<script src="core.ctrl.js"></script>
 <!--<script src="states/landing/ctrl.landing.js"></script>-->
 <!--<script src="states/auth/ctrl.auth.js"></script>-->
 <!--<script src="states/post/ctrl.post.js"></script>-->

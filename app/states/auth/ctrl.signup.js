@@ -6,7 +6,7 @@
 (function () {
     "use strict";
 
-    angular.module('edhubJobsApp').controller('SignupCtrl', ['edhubAuthService',
+    angular.module('L9-app').controller('SignupCtrl', ['edhubAuthService',
         '$state', '$scope',
         function (edhubAuthService, $scope) {
             const vm = this;

@@ -2,12 +2,48 @@ body {
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(51,51,51);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 29px;
+}
+
+h3 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
 /********************************
     -- L9 initial ui code --
 **********************************/
 
+.L9-figcaption {
+    color: rgb(170,170,170);
+    font-size: 16px;
+}
+
+.L9-footer-container {
+    background: linear-gradient(rgb(67,67,67), rgb(64,64,64));
+    /*color: #fdb311;*/
+    color: whitesmoke;
+}
+
+.L9-footer-container h1 {
+    color: whitesmoke;
+}
+
 .L9-text-center {
     text-align: center;
+}
+
+.L9-ul-none {
+    list-style-type: none;
 }
 
 .L9-text-right {
