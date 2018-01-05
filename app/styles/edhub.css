@@ -46,6 +46,10 @@ h3 {
     list-style-type: none;
 }
 
+.L9-ul-none > li {
+    margin-top: 8px;
+}
+
 .L9-text-right {
     text-align: right;
 }

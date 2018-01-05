@@ -51,7 +51,8 @@ angular
             })
             .state('login', {
                 url: '/login',
-                controller: 'AuthCtrl as authCtrl',
+                controller: 'AuthCtrl',
+                controllerAs: 'authCtrl',
                 templateUrl: 'auth/login.html',
                 resolve: {
                     requireNoAuth: function ($state, jaAuth) {

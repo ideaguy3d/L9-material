@@ -17,6 +17,25 @@ angular.module('L9-app', [
                     controller: 'Lab916Ctrl',
                     controllerAs: 'lab'
                 })
+                .state('contact', {
+                    url: '/contact',
+                    templateUrl: 'states/contact/view.contact.html',
+                    controller: 'uiPracCtrl',
+                    controllerAs: 'ui'
+                })
+                .state('what-we-do', {
+                    url: '/what-we-do',
+                    templateUrl: 'states/what-we-do/view.what-we-do.html',
+                    controller: 'uiPracCtrl',
+                    controllerAs: 'ui'
+                })
+                .state('case-studies', {
+                    url: '/case-studies',
+                    templateUrl: 'states/case-studies/view.case-studies.html',
+                    controller: 'uiPracCtrl',
+                    controllerAs: 'ui'
+                })
+                // just to practice various animation
                 .state('uit1', {
                     url: '/uit1',
                     templateUrl: 'ui-prac/uit1.html',
