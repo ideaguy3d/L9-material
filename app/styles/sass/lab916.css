@@ -1,0 +1,123 @@
+h1, h2, h3, h4, h5, h6, p {
+  font-family: Roboto, sans-serif; }
+
+.L9-opa50 {
+  opacity: 0.5;
+  border: solid 1px #52565f; }
+
+h2.L9-h2 {
+  font-weight: 300;
+  font-size: 46px; }
+
+.L9-para {
+  color: #52565f;
+  font-weight: 300;
+  font-size: 18px; }
+
+.L9-hero-landing .L9-hero-landing-inner {
+  width: 1020px; }
+
+.L9-hero-landing h1.L9-hero-h1 {
+  color: #52565f;
+  font-weight: 300;
+  font-size: 54px;
+  margin-bottom: 0; }
+
+.L9-hero-landing p {
+  color: #52565f;
+  font-weight: 300;
+  font-size: 18px; }
+
+.L9-hero-landing .L9-hero-img {
+  position: absolute;
+  right: -70px;
+  bottom: -50px; }
+
+.L9-hero-landing .L9-lwrap {
+  width: 580px; }
+
+.L9-hero-landing .L9-pos-rel {
+  position: relative; }
+
+.L9-figcaption {
+  color: #aaaaaa;
+  font-size: 16px; }
+
+.L9-footer-container {
+  background: linear-gradient(#434343, #404040);
+  /*color: #fdb311;*/
+  color: whitesmoke; }
+
+.L9-footer-container h1 {
+  color: whitesmoke; }
+
+.L9-text-center {
+  text-align: center; }
+
+.L9-ul-none {
+  list-style-type: none; }
+
+.L9-ul-none > li {
+  margin-top: 8px; }
+
+.L9-text-right {
+  text-align: right; }
+
+.L9-text-left {
+  text-align: left; }
+
+.L9-w33 {
+  width: 33%; }
+
+.L9-hero-h1 {
+  font-size: 48px;
+  color: whitesmoke; }
+
+.L9-btn {
+  padding: 8px; }
+
+.L9-hero-landing-629px {
+  height: auto;
+  width: 100%; }
+
+@media screen and (min-width: 1200px) {
+  .L9-hero-landing-629px {
+    height: 629px; } }
+
+.L9-bg-hero-img {
+  background-image: url(../images/hero-banner-3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 24px; }
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #fdb311;
+  text-align: center;
+  padding: 32px 16px;
+  text-decoration: none;
+  font-size: 17px; }
+
+.topnav a.L9-nav-logo {
+  float: left;
+  padding: 2px; }
+
+.topnav a.L9-nav-logo > img {
+  vertical-align: middle; }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: #434343; }
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #fdb311;
+  color: white; }
