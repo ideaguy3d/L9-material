@@ -2,7 +2,8 @@
 <section layout="row" layout-xs="column" layout-padding layout-align="center center"
          class="L9-hero-landing">
     <div flex-md="80" class="L9-text-left L9-pos-rel L9-hero-landing-inner">
-        <img src="http://via.placeholder.com/490x360" alt="img" class="L9-hero-img L9-opa50">
+        <img src="https://files.slack.com/files-pri/T7HUA0G57-F8NSYUFFD/hero_shutterstock_vector_hero_images-01.png" alt="img" class="L9-hero-img L9-opa50"
+        width="490px">
         <div class="L9-lwrap">
             <h1 class="L9-hero-h1">Easily organise web development process</h1>
             <p class="L9-para">{{lab.heroPara}}</p>
@@ -26,32 +27,69 @@
 <!-- What we do again? -->
 <section layout="column" layout-padding>
     <div layout="row" layout-align="center center">
-        <div flex="40" class="L9-text-center">
-            <h2 class="L9-h2 center">... What we do again?</h2>
-            <p class="L9-para">{{lab.whatWeDo}}</p>
+        <div flex="60" class="L9-text-center">
+            <!--<h2 class="L9-h2 center">... What we do again?</h2>-->
+            <div class="L9-what-we-do-title">{{lab.whatWeDo}}</div>
         </div>
     </div>
 
     <div layout="row" layout-xs="column" layout-align="center center">
         <div flex="25" class="L9-text-center">
             <img ng-src="{{lab.moMoneyImg}}" alt="img" width="100%">
-            <h3>Content Optimization</h3>
+            <div class="L9-para">Content Optimization</div>
         </div>
         <div flex="25" class="L9-text-center">
             <img ng-src="{{lab.withProsImg}}" alt="img" width="100%">
-            <h3>Content Optimization</h3>
+            <div class="L9-para">Advertising</div>
         </div>
         <div flex="25" class="L9-text-center">
             <img ng-src="{{lab.fbaBizImg}}" alt="img" width="100%">
-            <h3>Content Optimization</h3>
+            <div class="L9-para">Channel Management</div>
         </div>
     </div>
 </section>
 
 <br><br><br><br><br>
 
+<!-- We help get more sales -->
+<section layout="column" layout-align="center center" layout-padding>
+    <div flex="70" class="L9-text-center">
+        <h2 class="L9-h2">{{lab.slogan}}</h2>
+    </div>
+    <div class="L9-text-center L9-w800px">
+        <div class="L9-para">{{lab.moSalesPara}}</div>
+    </div>
+</section>
+
+<section layout="row" layout-sm="column" layout-align="center center" layout-padding>
+    <div flex="90">
+        <img ng-src="{{lab.sellerCentralImg1}}" alt="img" width="100%">
+    </div>
+</section>
+
+
+<br><br><br><br><br>
+
+<!-- withPros - side by side layout -->
+<section layout="row" layout-sm="column" layout-align="center center" class="L9-h100">
+    <!-- Left Side - img -->
+    <div flex="40" layout-padding>
+        <img ng-src="{{lab.withProsImg}}" alt="img" width="95%" class="L9-shadow1">
+    </div>
+
+    <!-- Right side - text -->
+    <div flex="40" layout-padding class="L9-text-center">
+        <!--<img src="http://via.placeholder.com/250x150" alt="img">-->
+        <h2>{{lab.withPros}}</h2>
+        <h3>{{lab.withProsPara}}</h3>
+        <button class="L9-btn">SEE MORE</button>
+    </div>
+</section>
+
+<br><br><br><br><br>
+
 <!-- moMoney - side by side layout -->
-<section layout="row" layout-sm="column" layout-align="center center">
+<section layout="row" layout-sm="column" layout-align="center center" class="L9-h100">
     <!-- Left side - text -->
     <div flex="40" layout-padding class="L9-text-center">
         <!--<img ng-src="http://via.placeholder.com/250x150" alt="img">-->
@@ -69,7 +107,7 @@
 <br><br><br><br><br>
 
 <!-- withPros - side by side layout -->
-<section layout="row" layout-sm="column" layout-align="center center">
+<section layout="row" layout-sm="column" layout-align="center center" class="L9-h100">
     <!-- Left Side - img -->
     <div flex="40" layout-padding>
         <img ng-src="{{lab.withProsImg}}" alt="img" width="95%" class="L9-shadow1">
@@ -87,7 +125,7 @@
 <br><br><br><br><br>
 
 <!-- fbaBiz - side by side -->
-<section layout="row" layout-sm="column" layout-align="center center">
+<section layout="row" layout-sm="column" layout-align="center center" class="L9-h100">
     <!-- Left side - text -->
     <div flex="40" layout-padding class="L9-text-center">
         <!--<img ng-src="http://via.placeholder.com/250x150" alt="img">-->
@@ -104,20 +142,11 @@
 
 <br><br><br><br><br>
 
+<!-- klein quote -->
 <section layout="row" layout-sm="column" layout-align="center center" layout-padding class="L9-text-center">
     <div flex="60">
         <h2>{{lab.kleinQuote}}</h2>
         <p class="L9-figcaption">— Nore Klein, Co-Founder @ M3 Group</p>
-    </div>
-</section>
-
-<br><br><br><br><br>
-
-<section layout="row" layout-sm="column" layout-align="center center" layout-padding>
-    <div flex="90" class="L9-text-center">
-        <img ng-src="{{lab.sellerCentralImg1}}" alt="img" width="95%">
-        <h1>{{lab.slogan}}</h1>
-        <button class="L9-btn">GET MY FREE CONSULTATION</button>
     </div>
 </section>
 

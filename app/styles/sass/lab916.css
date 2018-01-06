@@ -1,18 +1,32 @@
 h1, h2, h3, h4, h5, h6, p {
   font-family: Roboto, sans-serif; }
 
+.L9-w800px {
+  width: 800px; }
+
 .L9-opa50 {
   opacity: 0.5;
   border: solid 1px #52565f; }
 
+.L9-what-we-do-title {
+  font-weight: 300;
+  font-size: 24px;
+  color: #52565f;
+  line-height: 36px; }
+
+section.L9-h100 {
+  height: 100%; }
+
 h2.L9-h2 {
   font-weight: 300;
-  font-size: 46px; }
+  font-size: 46px;
+  color: #eccf2f; }
 
-.L9-para {
+div.L9-para {
   color: #52565f;
   font-weight: 300;
-  font-size: 18px; }
+  font-size: 18px;
+  line-height: 30px; }
 
 .L9-hero-landing .L9-hero-landing-inner {
   width: 1020px; }
@@ -26,7 +40,8 @@ h2.L9-h2 {
 .L9-hero-landing p {
   color: #52565f;
   font-weight: 300;
-  font-size: 18px; }
+  font-size: 18px;
+  line-height: 30px; }
 
 .L9-hero-landing .L9-hero-img {
   position: absolute;

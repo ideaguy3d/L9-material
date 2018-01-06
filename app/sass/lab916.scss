@@ -1,14 +1,21 @@
-$L9-color-main: #424242;
-$L9-ylight: #fbed80;
-$L9-font-main: "Roboto";
+
+//-- Colors:
+$L9-blk: #424242;
+$L9-clr-ylight: #fbed80;
+$L9-clr-ymed: #eccf2f;
+$L9-dk-grey: #52565f;
+
 $L9-height5: 500px;
 $L9-transparent: rgba(0, 0, 0, 0);
 $L9-pad-rl-1: 220px;
 $L9-width70: 70%;
-$L9-dk-grey: #52565f;
 
 h1, h2, h3, h4, h5, h6, p {
 	font-family: Roboto, sans-serif;
+}
+
+.L9-w800px {
+	width: 800px;
 }
 
 .L9-opa50 {
@@ -16,15 +23,28 @@ h1, h2, h3, h4, h5, h6, p {
 	border: solid 1px $L9-dk-grey;
 }
 
+.L9-what-we-do-title {
+	font-weight: 300;
+	font-size: 24px;
+	color: $L9-dk-grey;
+	line-height: 36px;
+}
+
+section.L9-h100 {
+	height: 100%;
+}
+
 h2.L9-h2 {
 	font-weight: 300;
 	font-size: 46px;
+	color: $L9-clr-ymed;
 }
 
-.L9-para {
+div.L9-para {
 	color: $L9-dk-grey;
 	font-weight: 300;
 	font-size: 18px;
+	line-height: 30px;
 }
 
 .L9-hero-landing {
@@ -45,6 +65,7 @@ h2.L9-h2 {
 		color: $L9-dk-grey;
 		font-weight: 300;
 		font-size: 18px;
+		line-height: 30px;
 	}
 	
 	.L9-hero-img {

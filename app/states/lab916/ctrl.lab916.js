@@ -15,6 +15,9 @@
             vm.heroTitle = "SKIP THE LEARNING CURVE OF SELLING YOUR BRAND ON AMAZON.";
             vm.heroPara = "Lab 916 a creative marketing agency in Sacramento, CA, that helps Amazon sellers get more sales. We take the guesswork out of selling on Amazon by crafting compelling, persuasive listings, improving PPC performance, and driving sales. In short: you have the amazing products, and we have the skills and expertise to get them into customer’s hands.";
             vm.heroQuote = "LAB916 isn’t your typical amateur Amazon marketing agency with zero experience. They actually increase traffic to your listing and more importantly, the vitalness of conversion. If you’re serious about growing your FBA business, give 10 minutes of your time to LAB916.";
+            vm.heroImg = "./l9-material/app/images/ill/hero-img.png";
+
+            vm.moSalesPara = "We simplify your work at all stages. Your customers will enjoy participating in the sales strategy process, and they will see the beautiful and understandable structure of the amazon listing";
 
             vm.moMoney = "You’ll Make More Money";
             vm.moMoneyPara = "From PPC management to listing optimizations, we help you discover the highest return on investment you’ve ever had.";
