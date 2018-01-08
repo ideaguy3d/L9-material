@@ -17,10 +17,37 @@ h1, h2, h3, h4, h5, h6, p {
 section.L9-h100 {
   height: 100%; }
 
+.L9-pad8 {
+  padding: 12px; }
+
 h2.L9-h2 {
   font-weight: 300;
   font-size: 46px;
   color: #eccf2f; }
+
+div.L9-left-sbs-img {
+  position: relative; }
+  div.L9-left-sbs-img img {
+    position: absolute;
+    top: -190px;
+    left: -100px; }
+  @media screen and (min-width: 1780px) {
+    div.L9-left-sbs-img img {
+      top: -290px; } }
+
+div.L9-right-sbs-img {
+  position: relative; }
+
+h2.L9-h2-sbs {
+  font-weight: 300;
+  font-size: 34px;
+  color: #eccf2f; }
+
+p.L9-p-sbs {
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 16px;
+  color: #8C9BAA; }
 
 div.L9-para {
   color: #52565f;
@@ -46,7 +73,7 @@ div.L9-para {
 .L9-hero-landing .L9-hero-img {
   position: absolute;
   right: -70px;
-  bottom: -50px; }
+  bottom: 0; }
 
 .L9-hero-landing .L9-lwrap {
   width: 580px; }
@@ -89,7 +116,7 @@ div.L9-para {
   color: whitesmoke; }
 
 .L9-btn {
-  padding: 8px; }
+  padding: 12px; }
 
 .L9-hero-landing-629px {
   height: auto;

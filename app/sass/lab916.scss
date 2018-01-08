@@ -4,6 +4,7 @@ $L9-blk: #424242;
 $L9-clr-ylight: #fbed80;
 $L9-clr-ymed: #eccf2f;
 $L9-dk-grey: #52565f;
+$L9-lt-grey: #8C9BAA;
 
 $L9-height5: 500px;
 $L9-transparent: rgba(0, 0, 0, 0);
@@ -34,10 +35,50 @@ section.L9-h100 {
 	height: 100%;
 }
 
+.L9-pad8 {
+	padding: 12px;
+}
+
 h2.L9-h2 {
 	font-weight: 300;
 	font-size: 46px;
 	color: $L9-clr-ymed;
+}
+
+div.L9-left-sbs-img {
+	position: relative;
+	
+	img {
+		position: absolute;
+		top: -190px;
+		left: -100px;
+	}
+	
+	@media screen and (min-width: 1780px) {
+		img {
+			top: -290px;
+		}
+	}
+}
+
+div.L9-right-sbs-img {
+	position: relative;
+	img {
+	
+	}
+}
+
+h2.L9-h2-sbs {
+	font-weight: 300;
+	font-size: 34px;
+	color: $L9-clr-ymed;
+}
+
+p.L9-p-sbs {
+	font-weight: 400;
+	line-height: 26px;
+	font-size: 16px;
+	color: $L9-lt-grey;
 }
 
 div.L9-para {
@@ -71,7 +112,7 @@ div.L9-para {
 	.L9-hero-img {
 		position: absolute;
 		right: -70px;
-		bottom: -50px;
+		bottom: 0;
 	}
 	
 	.L9-lwrap {
@@ -128,7 +169,7 @@ div.L9-para {
 }
 
 .L9-btn {
-	padding: 8px;
+	padding: 12px;
 }
 
 .L9-hero-landing-629px {
