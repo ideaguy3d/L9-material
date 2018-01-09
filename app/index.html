@@ -16,7 +16,8 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i"
+          rel="stylesheet">
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/edhub.css">
     <link rel="stylesheet" href="styles/sass/lab916.css">
@@ -34,7 +35,7 @@
     </style>
 </head>
 
-<body ng-app="L9-app" ng-cloak ng-controller="CoreCtrl">
+<body ng-app="L9-app" ng-cloak ng-controller="CoreCtrl as ctrl">
 
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">
@@ -54,6 +55,30 @@
     <a ui-sref="uit1">FREE CONSULTATION</a>
     <a ui-sref="case-studies">CASE STUDIES</a>
     <a ui-sref="what-we-do">WHAT WE DO</a>
+    <md-content class="md-padding">
+        <form ng-submit="$event.preventDefault()">
+            <md-autocomplete
+                    ng-disabled="ctrl.isDisabled"
+                    md-no-cache="ctrl.noCache"
+                    md-selected-item="ctrl.selectedItem"
+                    md-search-text-change="ctrl.searchTextChange(ctrl.searchText)"
+                    md-search-text="ctrl.searchText"
+                    md-selected-item-change="ctrl.selectedItemChange(item)"
+                    md-items="item in ctrl.querySearch(ctrl.searchText)"
+                    md-item-text="item.display"
+                    md-min-length="1"
+                    placeholder="Search">
+                <md-item-template>
+                    <span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item.display}}</span>
+                </md-item-template>
+                <md-not-found>
+                    No states matching "{{ctrl.searchText}}" were found.
+                    <a ng-click="ctrl.newState(ctrl.searchText)">Create a new one!</a>
+                </md-not-found>
+            </md-autocomplete>
+        </form>
+    </md-content>
+
 </div>
 
 <!-- application entry point -->
@@ -65,7 +90,10 @@
 <section layout="row" layout-align="space-around center" layout-sm="column" class="L9-footer-container">
     <!-- 1st column -->
     <div flex="50" layout-padding>
-        <h1 class="text-center"> <ng-md-icon icon="mail"></ng-md-icon> Subscribe to Lab916</h1>
+        <h1 class="text-center">
+            <ng-md-icon icon="mail"></ng-md-icon>
+            Subscribe to Lab916
+        </h1>
         <p>Built by <a href="http://lab916.com" target="_blank">Lab916</a></p>
         <p>We're still developing this app so we'll be adding more features and functionality </p>
     </div>
@@ -103,29 +131,35 @@
     </div>
 
     <div flex layout-padding>
-            <p>WORK WITH US</p>
-            <p>PRIVACY POLICY</p>
-            <p>TERMS & CONDITIONS</p>
-            <p>PRESS ENQUIRIES</p>
+        <p>WORK WITH US</p>
+        <p>PRIVACY POLICY</p>
+        <p>TERMS & CONDITIONS</p>
+        <p>PRESS ENQUIRIES</p>
     </div>
 </section>
 
 <!-- Social Media Links -->
 <div layout="row" layout-sm="column" layout-align="center center" class="L9-footer-container">
     <div flex="10">
-        <a href="#"> <ng-md-icon icon="facebook"></ng-md-icon> </a>
+        <a href="#">
+            <ng-md-icon icon="facebook"></ng-md-icon>
+        </a>
     </div>
     <div flex="10">
-        <a href="#"> <ng-md-icon icon="twitter"></ng-md-icon> </a>
+        <a href="#">
+            <ng-md-icon icon="twitter"></ng-md-icon>
+        </a>
     </div>
     <div flex="10">
-        <a href="#"> <ng-md-icon icon="linkedin"></ng-md-icon> </a>
+        <a href="#">
+            <ng-md-icon icon="linkedin"></ng-md-icon>
+        </a>
     </div>
 </div>
 
 <div layout="row" layout-sm="column" layout-align="center center" class="L9-footer-container L9-text-center">
     <div flex="60">
-        <h1>&copy; Lab916 Sacramento, California</h1>
+        <h1>&copy; 2018 Lab916 Sacramento, California</h1>
     </div>
 </div>
 
@@ -170,6 +204,7 @@
 <script src="ui-prac/ctrl.ui.prac.js"></script>
 <script src="states/lab916/ctrl.lab916.js"></script>
 <script src="states/lab916/dir.fba.sec.js"></script>
+<script src="states/lab916/dir.clients.worked.with.js"></script>
 <!-- endbuild -->
 
 </body>

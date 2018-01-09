@@ -23,13 +23,13 @@
 
             vm.moSalesPara = "We simplify your work at all stages. Your customers will enjoy participating in the sales strategy process, and they will see the beautiful and understandable structure of the amazon listing";
 
-            vm.moMoney = "You’ll Make More Money";
-            vm.moMoneyPara = "From PPC management to listing optimizations, we help you discover the highest return on investment you’ve ever had.";
-            vm.moMoneyImg = "http://lab916.wpengine.com/mock2/images/sbs-i2.png";
+            vm.moMoney = "Advertising";
+            vm.moMoneyPara = "We will also take care of advertising, creating sponsored product ads and using Amazon Marketing Services (AMS) to drive more clicks to your products and bring conversions that turn into sales. These services can be wieldy, but we have the expertise to navigate them deftly and keep your ACoS% low. ";
+            vm.moMoneyImg = "images/mimg.png";
 
             vm.withPros = "Enhanced Brand Content";
             vm.withProsPara = "From deep PPC knowledge to conversion optimized design, we bring the best of both worlds to grow your profitability.";
-            vm.withProsImg = "http://lab916.wpengine.com/mock2/images/ads-img.png";
+            vm.withProsImg = "images/sbs-i3.png";
 
             vm.fbaBiz = "Grow your FBA Business Faster";
             vm.fbaBizPara = "From quick wins to long term product strategies, we create a profit rich environment to help you scale with ease.";
