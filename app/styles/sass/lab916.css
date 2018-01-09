@@ -29,11 +29,34 @@ div.L9-left-sbs-img {
   position: relative; }
   div.L9-left-sbs-img img {
     position: absolute;
-    top: -190px;
-    left: -100px; }
+    top: -320px;
+    left: -410px;
+    max-width: 800px; }
+  @media screen and (min-width: 1060px) {
+    div.L9-left-sbs-img img {
+      left: -350px; } }
+  @media screen and (min-width: 1160px) {
+    div.L9-left-sbs-img img {
+      left: -310px; } }
+  @media screen and (min-width: 1260px) {
+    div.L9-left-sbs-img img {
+      left: -270px; } }
+  @media screen and (min-width: 1360px) {
+    div.L9-left-sbs-img img {
+      left: -230px; } }
+  @media screen and (min-width: 1460px) {
+    div.L9-left-sbs-img img {
+      left: -190px; } }
+  @media screen and (min-width: 1560px) {
+    div.L9-left-sbs-img img {
+      left: -150px; } }
+  @media screen and (min-width: 1680px) {
+    div.L9-left-sbs-img img {
+      left: -90px; } }
   @media screen and (min-width: 1780px) {
     div.L9-left-sbs-img img {
-      top: -290px; } }
+      top: -290px;
+      left: -50px; } }
 
 div.L9-right-sbs-img {
   position: relative; }

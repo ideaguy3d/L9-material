@@ -27,9 +27,9 @@
             vm.moMoneyPara = "From PPC management to listing optimizations, we help you discover the highest return on investment you’ve ever had.";
             vm.moMoneyImg = "http://lab916.wpengine.com/mock2/images/sbs-i2.png";
 
-            vm.withPros = "You'll Work With Professionals";
+            vm.withPros = "Enhanced Brand Content";
             vm.withProsPara = "From deep PPC knowledge to conversion optimized design, we bring the best of both worlds to grow your profitability.";
-            vm.withProsImg = "http://lab916.wpengine.com/mock2/images/sbs-i1.png";
+            vm.withProsImg = "http://lab916.wpengine.com/mock2/images/ads-img.png";
 
             vm.fbaBiz = "Grow your FBA Business Faster";
             vm.fbaBizPara = "From quick wins to long term product strategies, we create a profit rich environment to help you scale with ease.";
@@ -39,6 +39,10 @@
             vm.sellerCentralImg1 = "http://lab916.wpengine.com/mock2/images/hero-channel-management.png";
 
             vm.whatWeDo = "We work hard to make sure your products get the sales that they deserve on the Amazon marketplace. Our services include Content Optimization, Advertising, and Channel Management: three key elements to make your product rise above the competition.";
+
+            vm.advertisingPara = "We will also take care of advertising, creating sponsored product ads and using Amazon Marketing Services (AMS) to drive more clicks to your products and bring conversions that turn into sales. These services can be wieldy, but we have the expertise to navigate them deftly and keep your ACoS% low. ";
+            vm.contentOptPara = "Content optimization involves the branding and presentation of your Amazon listings. It’s easy to get lost in a sea of products in the ever-expanding Amazon universe— we know how to make yours stand out. Well-crafted design and copy go a long way in catching the attention of a customer, and we are experts in producing compelling examples of both. In addition, extensive keyword research has given us a deep understanding of the nuances of Amazon rankings, and we can bring yours to the top. ";
+            vm.channelManagePara = "We don’t wait for you to tell us what you want for your channel, we take proactive steps to leverage Amazon’s technologies on your behalf. Avoid the beginner mistakes that can cost you time and money, and allow our expertise to get your listings set up just the way Amazon likes them. We’ll help you with listing management, repricer setup, brand registration, and international selling to make sure that you get the most out of your Amazon presence.  ";
         }
     ]);
 }());
