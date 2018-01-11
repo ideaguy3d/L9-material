@@ -29,6 +29,10 @@ angular.module('L9-app', [
                     controller: 'uiPracCtrl',
                     controllerAs: 'ui'
                 })
+                .state('content-opt', {
+                    url:'/what-we-do/content-opt',
+                    templateUrl: 'states/what-we-do/view.content-opt.html'
+                })
                 .state('case-studies', {
                     url: '/case-studies',
                     templateUrl: 'states/case-studies/view.case-studies.html',

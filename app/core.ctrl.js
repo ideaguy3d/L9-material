@@ -10,6 +10,7 @@
         function ($scope, $timeout, $q, $log) {
             $scope.ccCurrentUser = "";
             $scope.coreEdhubState = false;
+            $scope.ccShowIndexSubFooter = false;
 
             $scope.ccSetCurrentUser = function(userEmail){
                 $scope.ccCurrentUser = userEmail;

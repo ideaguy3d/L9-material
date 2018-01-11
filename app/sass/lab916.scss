@@ -51,6 +51,32 @@ h2.L9-h2 {
 	padding: 16px;
 }
 
+.L9-services-quote-img {
+	background: url(http://static2.businessinsider.com/image/55d4ccbf2acae717448bf0ce-480/barack-obama-smile.jpg) no-repeat center/cover;
+	height: 400px;
+	width: 100%;
+}
+
+@media screen and (max-width: 959px) {
+	.L9-services-quote-img {
+		width: 100vw;
+	}
+}
+
+.L9-services-quote-txt {
+	margin-top: 95px;
+	padding: 32px;
+}
+
+.L9-bg-c1 {
+	background-color: $L9-lt-grey;
+	min-height: 400px;
+	
+	h1, h2, h3, h4, h5, h6 {
+		padding-top: 170px;
+	}
+}
+
 .L9-w100 {
 	width: 100%;
 }
@@ -249,6 +275,20 @@ div.L9-para {
 .L9-figcaption {
 	color: rgb(170, 170, 170);
 	font-size: 16px;
+}
+
+.L9-simple-centered-header {
+	position: relative;
+	top: 25px;
+}
+
+.L9-full-width-next-service-link {
+	min-height: 250px;
+	background: url(../../images/full-width-short-img.jpg) no-repeat center/cover;
+}
+
+.L9-sub-footer-container {
+	padding: 8px;
 }
 
 .L9-footer-container {
