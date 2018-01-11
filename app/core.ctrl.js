@@ -6,27 +6,42 @@
 (function () {
     "use strict";
 
-    angular.module('L9-app').controller('CoreCtrl', ['$scope', '$timeout', '$q', '$log',
-        function ($scope, $timeout, $q, $log) {
+    angular.module('L9-app').controller('CoreCtrl', ['$rootScope', '$scope', '$timeout', '$q', '$log',
+        '$location',
+        function ($rootScope, $scope, $timeout, $q, $log, $location) {
+            checkUrl();
+            $rootScope.ccShowHomeSubFooter = true;
+
             $scope.ccCurrentUser = "";
             $scope.coreEdhubState = false;
-            $scope.ccShowIndexSubFooter = false;
 
-            $scope.ccSetCurrentUser = function(userEmail){
+            $scope.ccSetCurrentUser = function (userEmail) {
                 $scope.ccCurrentUser = userEmail;
             };
 
+            function checkUrl() {
+                console.log("jha - checkUrl() invoked... \n");
+                if ($location.url() === '/what-we-do') {
+                    $rootScope.ccShowHomeSubFooter = false;
+                } else {
+                    $rootScope.ccShowHomeSubFooter = true;
+                }
+            }
+
+            /*************************************************
+             * Search Bar stuff .START()
+             * **********************************************/
             var self = this;
 
             self.simulateQuery = false;
-            self.isDisabled    = false;
+            self.isDisabled = false;
             self.noCache = true;
 
             // list of `state` value/display objects
-            self.states        = loadAll();
-            self.querySearch   = querySearch;
+            self.states = loadAll();
+            self.querySearch = querySearch;
             self.selectedItemChange = selectedItemChange;
-            self.searchTextChange   = searchTextChange;
+            self.searchTextChange = searchTextChange;
 
             self.newState = newState;
 
@@ -42,12 +57,14 @@
              * Search for states... use $timeout to simulate
              * remote dataservice call.
              */
-            function querySearch (query) {
-                var results = query ? self.states.filter( createFilterFor(query) ) : self.states,
+            function querySearch(query) {
+                var results = query ? self.states.filter(createFilterFor(query)) : self.states,
                     deferred;
                 if (self.simulateQuery) {
                     deferred = $q.defer();
-                    $timeout(function () { deferred.resolve( results ); }, Math.random() * 1000, false);
+                    $timeout(function () {
+                        deferred.resolve(results);
+                    }, Math.random() * 1000, false);
                     return deferred.promise;
                 } else {
                     return results;
@@ -74,7 +91,7 @@
               South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia,\
               Wisconsin, Wyoming';
 
-                return allStates.split(/, +/g).map( function (state) {
+                return allStates.split(/, +/g).map(function (state) {
                     return {
                         value: state.toLowerCase(),
                         display: state
@@ -93,6 +110,10 @@
                 };
 
             }
+
+            /*************************************************
+             * Search Bar stuff .END()
+             * **********************************************/
         }
     ]);
 }());

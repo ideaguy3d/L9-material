@@ -15,7 +15,10 @@ angular.module('L9-app', [
                     url: '/',
                     templateUrl: 'states/lab916/view.lab916.html',
                     controller: 'Lab916Ctrl',
-                    controllerAs: 'lab'
+                    controllerAs: 'lab',
+                    resolve: {
+
+                    }
                 })
                 .state('contact', {
                     url: '/contact',
@@ -26,18 +29,44 @@ angular.module('L9-app', [
                 .state('what-we-do', {
                     url: '/what-we-do',
                     templateUrl: 'states/what-we-do/view.what-we-do.html',
-                    controller: 'uiPracCtrl',
-                    controllerAs: 'ui'
+                    controller: 'WhatWeDoCtrl',
+                    controllerAs: 'wedo',
+                    resolve: {
+                        homeSubFooterState: function () {
+                            return {
+                                curState: 'what-we-do',
+                                mode: false
+                            };
+                        }
+                    }
                 })
                 .state('content-opt', {
                     url:'/what-we-do/content-opt',
-                    templateUrl: 'states/what-we-do/view.content-opt.html'
+                    templateUrl: 'states/what-we-do/view.content-opt.html',
+                    controller: 'WhatWeDoCtrl',
+                    controllerAs: 'wedo',
+                    resolve: {
+                        homeSubFooterState: function () {
+                            return {
+                                curState: 'content-opt',
+                                mode: true
+                            };
+                        }
+                    }
                 })
                 .state('case-studies', {
                     url: '/case-studies',
                     templateUrl: 'states/case-studies/view.case-studies.html',
                     controller: 'uiPracCtrl',
-                    controllerAs: 'ui'
+                    controllerAs: 'ui',
+                    resolve: {
+                        homeSubFooterState: function () {
+                            return {
+                                curState: 'content-opt',
+                                mode: true
+                            };
+                        }
+                    }
                 })
                 // just to practice various animation
                 .state('uit1', {

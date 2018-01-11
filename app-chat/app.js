@@ -156,7 +156,6 @@ angular
                 }
             });
 
-        console.log("new admin state should be ready...");
         $urlRouterProvider.otherwise('/');
 
         //-- firebase db initialization:
@@ -169,10 +168,4 @@ angular
         };
 
         firebase.initializeApp(config);
-
-        var jd = {
-            des: "build stuff",
-            loc: "san jose",
-            skills: "hacking"
-        };
     });
