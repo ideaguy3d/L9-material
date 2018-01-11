@@ -151,6 +151,18 @@ div.L9-para {
   background-color: whitesmoke;
   padding: 16px; }
 
+.L9-content-opt-fw-img {
+  background: url(../../images/L9-ph-lg.jpg) no-repeat center/cover;
+  height: 60vh; }
+
+.L9-content-opt-row2 div.rhs {
+  background: url(http://via.placeholder.com/500x900) no-repeat center/cover;
+  height: 100vh; }
+
+.L9-content-opt-hero {
+  background: url(../../images/L9-ph-lg.jpg) no-repeat center/cover;
+  height: 100vh; }
+
 .L9-hero-landing .L9-hero-landing-inner {
   width: 1020px; }
 
