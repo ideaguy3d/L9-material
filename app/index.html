@@ -51,10 +51,11 @@
     </a>
 
     <!--<a class="active" href="#home">Home</a>-->
-    <a ui-sref="contact">CONTACT</a>
-    <a ui-sref="uit1">FREE CONSULTATION</a>
+    <a ui-sref="uit1">WHY LAB916 <strong><ng-md-icon icon="keyboard_arrow_down"></ng-md-icon></strong> </a>
+    <a ui-sref="contact">GET A QUOTE</a>
+
     <a ui-sref="case-studies">CASE STUDIES</a>
-    <a ui-sref="what-we-do">WHAT WE DO</a>
+    <a ui-sref="what-we-do">SERVICES</a>
     <md-content class="md-padding">
         <form ng-submit="$event.preventDefault()">
             <md-autocomplete
@@ -87,81 +88,7 @@
 <br>
 
 <!-- footer -->
-<section layout="row" layout-align="space-around center" layout-sm="column" class="L9-footer-container">
-    <!-- 1st column -->
-    <div flex="40" layout-padding>
-        <h1 class="text-center">
-            <ng-md-icon icon="mail"></ng-md-icon>
-            Subscribe to Lab916
-        </h1>
-        <p>Built by <a href="http://lab916.com" target="_blank">Lab916</a></p>
-        <p>We're still developing this app so we'll be adding more features and functionality </p>
-    </div>
-
-    <!-- 2nd column -->
-    <div flex="30" >
-        <ul class="L9-ul-none">
-            <li><b><u>Lab916.com Progress</u></b></li>
-            <li>Code initial UI and basic Authentication
-                <ng-md-icon icon="check"></ng-md-icon>
-            </li>
-            <li>Implement Backend API to CRUD data
-                <ng-md-icon icon="error"></ng-md-icon>
-            </li>
-            <li>Integrate 3rd party API's
-                <ng-md-icon icon="error"></ng-md-icon>
-            </li>
-            <li>Write Unit & e2e tests
-                <ng-md-icon icon="error"></ng-md-icon>
-            </li>
-            <li>Make UI even prettier for awesome UX, <i>near future</i>
-                <ng-md-icon icon="error"></ng-md-icon>
-            </li>
-        </ul>
-    </div>
-
-    <!-- 3rd column -->
-    <div flex layout-padding>
-        <p><a href="http://site1.julius3d.com" target="_blank">CONTACT US</a></p>
-        <p><a href="http://material.julius3d.com" target="_blank">ORDERING & PAYMENT</a></p>
-        <p><a href="https://juliusproto.firebaseapp.com" target="_blank">SHIPPING</a></p>
-        <p><a href="https://tedfeed.firebaseapp.com" target="_blank">RETURNS</a></p>
-        <p><a href="http://julius3d.com" target="_blank">FAQ</a></p>
-        <p><a href="http://julius3d.com" target="_blank">SIZING GUIDE</a></p>
-    </div>
-
-    <div flex layout-padding>
-        <p>WORK WITH US</p>
-        <p>PRIVACY POLICY</p>
-        <p>TERMS & CONDITIONS</p>
-        <p>PRESS ENQUIRIES</p>
-    </div>
-</section>
-
-<!-- Social Media Links -->
-<div layout="row" layout-sm="column" layout-align="center center" class="L9-footer-container">
-    <div flex="10">
-        <a href="#">
-            <ng-md-icon icon="facebook"></ng-md-icon>
-        </a>
-    </div>
-    <div flex="10">
-        <a href="#">
-            <ng-md-icon icon="twitter"></ng-md-icon>
-        </a>
-    </div>
-    <div flex="10">
-        <a href="#">
-            <ng-md-icon icon="linkedin"></ng-md-icon>
-        </a>
-    </div>
-</div>
-
-<div layout="row" layout-sm="column" layout-align="center center" class="L9-footer-container L9-text-center">
-    <div flex="60">
-        <h1>&copy; 2018 Lab916 Sacramento, California</h1>
-    </div>
-</div>
+<lab-footer></lab-footer>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>
@@ -176,17 +103,16 @@
     ga('send', 'pageview');
 </script>
 
-
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
-<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/firebase/firebase.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="bower_components/angular-md5/angular-md5.js"></script>
-<script src="bower_components/angular-animate/angular-animate.js"></script>
-<script src="bower_components/angular-aria/angular-aria.js"></script>
-<script src="bower_components/angular-messages/angular-messages.js"></script>
-<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-messages/angular-messages.min.js"></script>
+<script src="bower_components/angular-material/angular-material.min.js"></script>
 <script src="bower_components/angular-material-icons/angular-material-icons.min.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
@@ -205,6 +131,7 @@
 <script src="states/lab916/ctrl.lab916.js"></script>
 <script src="states/lab916/dir.fba.sec.js"></script>
 <script src="states/lab916/dir.clients.worked.with.js"></script>
+<script src="layout/footer/dir.footer.js"></script>
 <!-- endbuild -->
 
 </body>

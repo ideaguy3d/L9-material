@@ -1,12 +1,12 @@
 (function(window) {
     angular.module('L9-app')
-        .directive("fbaSection", function () {
+        .directive("labFooter", function () {
             return {
                 restrict: 'E',
                 transclude: true,
-                templateUrl: 'states/lab916/temps/temp.fba.sec.html',
+                templateUrl: 'layout/footer/temp.footer.html',
                 scope: {},
-                link: function(scope, elem, attr) {}
+                link: function(scope, elem, attr, ctrl) {}
             }
         });
 
