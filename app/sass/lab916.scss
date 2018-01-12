@@ -244,7 +244,19 @@ div.L9-para {
 
 .L9-content-opt-fw-img {
 	background: url(../../images/L9-ph-lg.jpg) no-repeat center/cover;
-	height: 60vh;
+	height: 70vh;
+}
+
+.L9-content-opt-row4 {
+	
+	div.lhs-img {
+		background: url(http://via.placeholder.com/500x900) no-repeat center/cover;
+		height: 100vh;
+	}
+	
+	div.rhs-txt {
+		padding-left: 42px;
+	}
 }
 
 .L9-content-opt-row2 {

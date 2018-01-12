@@ -41,7 +41,7 @@ angular.module('L9-app', [
                     }
                 })
                 .state('content-opt', {
-                    url:'/what-we-do/content-opt',
+                    url:'/what-we-do/content-optimization',
                     templateUrl: 'states/what-we-do/view.content-opt.html',
                     controller: 'WhatWeDoCtrl',
                     controllerAs: 'wedo',
@@ -49,6 +49,34 @@ angular.module('L9-app', [
                         homeSubFooterState: function () {
                             return {
                                 curState: 'content-opt',
+                                mode: true
+                            };
+                        }
+                    }
+                })
+                .state('promote', {
+                    url:'/what-we-do/advertising',
+                    templateUrl: 'states/what-we-do/view.promote.html',
+                    controller: 'WhatWeDoCtrl',
+                    controllerAs: 'wedo',
+                    resolve: {
+                        homeSubFooterState: function () {
+                            return {
+                                curState: 'promote',
+                                mode: true
+                            };
+                        }
+                    }
+                })
+                .state('channel-management', {
+                    url:'/what-we-do/channel-management',
+                    templateUrl: 'states/what-we-do/view.channel-management.html',
+                    controller: 'WhatWeDoCtrl',
+                    controllerAs: 'wedo',
+                    resolve: {
+                        homeSubFooterState: function () {
+                            return {
+                                curState: 'channel-management',
                                 mode: true
                             };
                         }
