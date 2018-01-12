@@ -11,8 +11,8 @@
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
-    <link rel="stylesheet" href="bower_components/angular-material-icons/angular-material-icons.css" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
+    <link rel="stylesheet" href="bower_components/angular-material-icons/angular-material-icons.css"/>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -43,7 +43,7 @@
 <![endif]-->
 
 <!-- L9-material Horizontal navigation -->
-<div class="topnav" id="myTopnav">
+<div id="L9-main-nav" class="topnav">
     <a href="#" class="L9-nav-logo">
         <img src="https://static1.squarespace.com/static/58486f891b631beb1bea6ebe/t/5871c70e6b8f5b2a8ee6d964/1500779111862/?format=1500w"
              alt="logo" width="80px">
@@ -51,9 +51,10 @@
     </a>
 
     <!--<a class="active" href="#home">Home</a>-->
-    <a ui-sref="uit1">WHY LAB916 <strong><ng-md-icon icon="keyboard_arrow_down"></ng-md-icon></strong> </a>
+    <a ng-click="ccToggleTempDrop()" class="L9-whyL9-dropdown">WHY LAB916 <strong>
+        <ng-md-icon icon="keyboard_arrow_down"></ng-md-icon>
+    </strong> </a>
     <a ui-sref="contact">GET A QUOTE</a>
-
     <a ui-sref="case-studies">CASE STUDIES</a>
     <a ui-sref="what-we-do">SERVICES</a>
     <md-content class="md-padding">
@@ -82,10 +83,25 @@
 
 </div>
 
+<div ng-show="ccTempDrop" class="L9-temp-drop-down-nav">
+    <ul>
+        <li>TEMPORARY DROP DOWN</li>
+        <li class="L9-link"><a ui-sref="uit1">service puddle</a></li>
+        <li class="L9-link"><a ui-sref="uit1">about us</a></li>
+        <li class="L9-link"><a ui-sref="uit1">service puddle</a></li>
+        <li class="L9-link"><a ui-sref="uit1">about us</a></li>
+    </ul>
+</div>
+
 <!-- application entry point -->
 <ui-view autoscroll="true"></ui-view>
 
 <br>
+
+<button id="L9-scroll2top" class="md-fab md-fab-bottom-right docs-scroll-fab md-button md-ink-ripple scrolling" type="button"
+        ng-click="ccScrollTop()" aria-label="Back to Top">
+    <ng-md-icon role="img" aria-hidden="true" icon="keyboard_arrow_up"></ng-md-icon>
+</button>
 
 <!-- footer -->
 <lab-sub-footer ng-if="ccShowHomeSubFooter">Get. More. Sales.</lab-sub-footer>

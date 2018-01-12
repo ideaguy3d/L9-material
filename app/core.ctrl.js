@@ -7,13 +7,23 @@
     "use strict";
 
     angular.module('L9-app').controller('CoreCtrl', ['$rootScope', '$scope', '$timeout', '$q', '$log',
-        '$location',
-        function ($rootScope, $scope, $timeout, $q, $log, $location) {
+        '$location', '$anchorScroll',
+        function ($rootScope, $scope, $timeout, $q, $log, $location, $anchorScroll) {
             checkUrl();
             $rootScope.ccShowHomeSubFooter = true;
 
             $scope.ccCurrentUser = "";
             $scope.coreEdhubState = false;
+            $scope.ccTempDrop = false;
+
+            $scope.ccScrollTop = function () {
+                $location.hash('L9-main-nav');
+                $anchorScroll();
+            };
+
+            $scope.ccToggleTempDrop = function () {
+                $scope.ccTempDrop = !$scope.ccTempDrop;
+            };
 
             $scope.ccSetCurrentUser = function (userEmail) {
                 $scope.ccCurrentUser = userEmail;
@@ -21,9 +31,7 @@
 
             function checkUrl() {
                 console.log("jha - checkUrl() invoked... \n");
-                if ($location.url() === '/what-we-do') {
-                    $rootScope.ccShowHomeSubFooter = false;
-                } else {
+                if ($location.url() === '/') {
                     $rootScope.ccShowHomeSubFooter = true;
                 }
             }

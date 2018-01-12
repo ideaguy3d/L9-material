@@ -99,7 +99,7 @@ angular.module('L9-app', [
                 // just to practice various animation
                 .state('uit1', {
                     url: '/uit1',
-                    templateUrl: 'ui-prac/uit1.html',
+                    templateUrl: 'states/ui-prac/uit1.html',
                     controller: 'uiPracCtrl',
                     controllerAs: 'ui'
                 });

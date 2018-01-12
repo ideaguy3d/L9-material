@@ -1,6 +1,10 @@
 h1, h2, h3, h4, h5, h6, p {
   font-family: Roboto, sans-serif; }
 
+ul {
+  text-decoration: none;
+  list-style: none; }
+
 .L9-w800px {
   width: 800px; }
 
@@ -147,7 +151,7 @@ div.L9-para {
   line-height: 30px; }
 
 .L9-sub-footer-translude {
-  color: #9a9314;
+  color: #c4bd14;
   background-color: whitesmoke;
   padding: 16px; }
 
@@ -161,6 +165,31 @@ div.L9-para {
 
 .L9-content-opt-row4 div.rhs-txt {
   padding-left: 42px; }
+
+.L9-whyL9-dropdown {
+  cursor: pointer; }
+
+.md-fab.docs-scroll-fab {
+  position: fixed !important;
+  transition: transform 0.2s; }
+
+button#L9-scroll2top {
+  background: #c4bd14; }
+
+.L9-temp-drop-down-nav {
+  text-align: right;
+  padding-right: 32px;
+  position: relative;
+  top: -38px; }
+  .L9-temp-drop-down-nav li.L9-link {
+    cursor: pointer;
+    padding: 8px 16px;
+    display: inline-block; }
+    .L9-temp-drop-down-nav li.L9-link a {
+      text-decoration: none; }
+  .L9-temp-drop-down-nav li.L9-link:hover {
+    background-color: #eccf2f;
+    color: #ffffff; }
 
 .L9-content-opt-row2 div.rhs {
   background: url(http://via.placeholder.com/500x900) no-repeat center/cover;

@@ -2,7 +2,7 @@
 $L9-blk: #424242;
 $L9-clr-ylight: #fbed80;
 $L9-clr-ymed: #eccf2f;
-$L9-clr-ydrk: #9a9314;
+$L9-clr-ydrk: #c4bd14;
 $L9-dk-grey: #52565f;
 $L9-lt-grey: #8C9BAA;
 
@@ -13,6 +13,11 @@ $L9-width70: 70%;
 
 h1, h2, h3, h4, h5, h6, p {
 	font-family: Roboto, sans-serif;
+}
+
+ul {
+	text-decoration: none;
+	list-style: none;
 }
 
 .L9-w800px {
@@ -256,6 +261,41 @@ div.L9-para {
 	
 	div.rhs-txt {
 		padding-left: 42px;
+	}
+}
+
+.L9-whyL9-dropdown {
+	cursor: pointer;
+}
+
+.md-fab.docs-scroll-fab {
+	position: fixed !important;
+	transition: transform 0.2s;
+}
+
+button#L9-scroll2top {
+	background: $L9-clr-ydrk;
+}
+
+.L9-temp-drop-down-nav {
+	text-align: right;
+	padding-right: 32px;
+	position: relative;
+	top: -38px;
+	
+	li.L9-link {
+		cursor: pointer;
+		padding: 8px 16px;
+		display: inline-block;
+		
+		a {
+			text-decoration: none;
+		}
+	}
+	
+	li.L9-link:hover {
+		background-color: $L9-clr-ymed;
+		color: #ffffff;
 	}
 }
 
