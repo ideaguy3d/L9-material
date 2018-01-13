@@ -52,6 +52,16 @@ h2.L9-h2 {
   min-height: 400px; }
   .L9-bg-c1 h1, .L9-bg-c1 h2, .L9-bg-c1 h3, .L9-bg-c1 h4, .L9-bg-c1 h5, .L9-bg-c1 h6 {
     padding-top: 170px; }
+  .L9-bg-c1 div.L9-resources-title {
+    font-weight: bolder;
+    font-size: 94px;
+    text-transform: uppercase; }
+
+.L9-bg-c2 {
+  background-color: #8C9BAA;
+  min-height: 200px; }
+  .L9-bg-c2 h1, .L9-bg-c2 h2, .L9-bg-c2 h3, .L9-bg-c2 h4, .L9-bg-c2 h5, .L9-bg-c2 h6 {
+    padding-top: 80px; }
 
 .L9-w100 {
   width: 100%; }
@@ -159,20 +169,21 @@ div.L9-para {
   background: url(../../images/L9-ph-lg.jpg) no-repeat center/cover;
   height: 70vh; }
 
-.L9-content-opt-row4 div.lhs-img {
-  background: url(http://via.placeholder.com/500x900) no-repeat center/cover;
-  height: 100vh; }
-
-.L9-content-opt-row4 div.img-v2 {
-  background: url(http://via.placeholder.com/500x900) no-repeat center/cover;
-  height: 600px; }
-
-.L9-content-opt-row4 div.rhs-txt {
-  padding-left: 42px; }
-
-.L9-content-opt-row4 div.L9-btm-img {
-  margin-top: 100px;
-  background-color: #cccccc; }
+.L9-content-opt-row4 {
+  margin-top: 100px; }
+  .L9-content-opt-row4 div.lhs-img {
+    background: url(http://via.placeholder.com/500x900) no-repeat center/cover;
+    height: 100vh; }
+  .L9-content-opt-row4 div.img-v2 {
+    background: url(http://via.placeholder.com/500x900) no-repeat center/cover;
+    height: 600px; }
+  .L9-content-opt-row4 div.rhs-txt {
+    padding-left: 42px; }
+  .L9-content-opt-row4 div.lhs-txt {
+    padding-right: 42px; }
+  .L9-content-opt-row4 div.L9-btm-img {
+    margin-top: 100px;
+    background-color: #cccccc; }
 
 .L9-whyL9-dropdown {
   cursor: pointer; }

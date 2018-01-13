@@ -1,8 +1,9 @@
-(function(){
+(function () {
     angular.module('L9-app')
         .controller("PagesCtrl", [
-            function(){
+            function () {
                 var vm = this;
+
             }
-        ])
+        ]);
 })();

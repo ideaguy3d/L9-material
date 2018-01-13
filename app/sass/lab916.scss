@@ -73,6 +73,8 @@ h2.L9-h2 {
 	padding: 32px;
 }
 
+
+
 .L9-bg-c1 {
 	background-color: $L9-clr-ltgrey;
 	min-height: 400px;
@@ -80,7 +82,23 @@ h2.L9-h2 {
 	h1, h2, h3, h4, h5, h6 {
 		padding-top: 170px;
 	}
+	
+	div.L9-resources-title {
+		font-weight: bolder;
+		font-size: 94px;
+		text-transform: uppercase;
+	}
 }
+
+.L9-bg-c2 {
+	background-color: $L9-clr-ltgrey;
+	min-height: 200px;
+	
+	h1, h2, h3, h4, h5, h6 {
+		padding-top: 80px;
+	}
+}
+
 
 .L9-w100 {
 	width: 100%;
@@ -253,6 +271,7 @@ div.L9-para {
 }
 
 .L9-content-opt-row4 {
+	margin-top: 100px;
 	
 	div.lhs-img {
 		background: url(http://via.placeholder.com/500x900) no-repeat center/cover;
@@ -266,6 +285,10 @@ div.L9-para {
 	
 	div.rhs-txt {
 		padding-left: 42px;
+	}
+	
+	div.lhs-txt {
+		padding-right: 42px;
 	}
 	
 	div.L9-btm-img {
