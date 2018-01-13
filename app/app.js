@@ -96,6 +96,23 @@ angular.module('L9-app', [
                         }
                     }
                 })
+                .state('service-puddle', {
+                    url: "/service-puddle",
+                    templateUrl: "states/pages/view.service-puddle.html"
+                })
+                .state('resources', {
+                    url: "/resources",
+                    templateUrl: "states/pages/view.resources.html"
+                })
+                .state('careers', {
+                    url: "/careers",
+                    templateUrl: "states/pages/view.career.html"
+                })
+                .state('why-us', {
+                    url: "/why-us",
+                    templateUrl: "states/pages/view.why-us.html"
+                })
+                // -----------------------------------
                 // just to practice various animation
                 .state('uit1', {
                     url: '/uit1',

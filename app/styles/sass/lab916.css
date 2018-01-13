@@ -163,8 +163,16 @@ div.L9-para {
   background: url(http://via.placeholder.com/500x900) no-repeat center/cover;
   height: 100vh; }
 
+.L9-content-opt-row4 div.img-v2 {
+  background: url(http://via.placeholder.com/500x900) no-repeat center/cover;
+  height: 600px; }
+
 .L9-content-opt-row4 div.rhs-txt {
   padding-left: 42px; }
+
+.L9-content-opt-row4 div.L9-btm-img {
+  margin-top: 100px;
+  background-color: #cccccc; }
 
 .L9-whyL9-dropdown {
   cursor: pointer; }
@@ -176,6 +184,17 @@ div.L9-para {
 button#L9-scroll2top {
   background: #c4bd14; }
 
+.L9-why-us-nbr {
+  padding: 24px;
+  background-color: #8C9BAA;
+  display: inline-block;
+  color: #ffffff; }
+
+section.L9-clients-row {
+  height: 150px;
+  background-color: #8C9BAA;
+  font-weight: bolder; }
+
 .L9-temp-drop-down-nav {
   text-align: right;
   padding-right: 32px;
@@ -186,7 +205,8 @@ button#L9-scroll2top {
     padding: 8px 16px;
     display: inline-block; }
     .L9-temp-drop-down-nav li.L9-link a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: inherit; }
   .L9-temp-drop-down-nav li.L9-link:hover {
     background-color: #eccf2f;
     color: #ffffff; }

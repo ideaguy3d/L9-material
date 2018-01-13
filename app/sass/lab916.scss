@@ -3,8 +3,8 @@ $L9-blk: #424242;
 $L9-clr-ylight: #fbed80;
 $L9-clr-ymed: #eccf2f;
 $L9-clr-ydrk: #c4bd14;
-$L9-dk-grey: #52565f;
-$L9-lt-grey: #8C9BAA;
+$L9-clr-dkgrey: #52565f;
+$L9-clr-ltgrey: #8C9BAA;
 
 $L9-height5: 500px;
 $L9-transparent: rgba(0, 0, 0, 0);
@@ -26,13 +26,13 @@ ul {
 
 .L9-opa50 {
 	opacity: 0.5;
-	border: solid 1px $L9-dk-grey;
+	border: solid 1px $L9-clr-dkgrey;
 }
 
 .L9-what-we-do-title {
 	font-weight: 300;
 	font-size: 24px;
-	color: $L9-dk-grey;
+	color: $L9-clr-dkgrey;
 	line-height: 36px;
 }
 
@@ -74,7 +74,7 @@ h2.L9-h2 {
 }
 
 .L9-bg-c1 {
-	background-color: $L9-lt-grey;
+	background-color: $L9-clr-ltgrey;
 	min-height: 400px;
 	
 	h1, h2, h3, h4, h5, h6 {
@@ -231,11 +231,11 @@ p.L9-p-sbs {
 	font-weight: 400;
 	line-height: 26px;
 	font-size: 16px;
-	color: $L9-lt-grey;
+	color: $L9-clr-ltgrey;
 }
 
 div.L9-para {
-	color: $L9-dk-grey;
+	color: $L9-clr-dkgrey;
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 30px;
@@ -259,8 +259,18 @@ div.L9-para {
 		height: 100vh;
 	}
 	
+	div.img-v2 {
+		background: url(http://via.placeholder.com/500x900) no-repeat center/cover;
+		height: 600px;
+	}
+	
 	div.rhs-txt {
 		padding-left: 42px;
+	}
+	
+	div.L9-btm-img {
+		margin-top: 100px;
+		background-color: #cccccc;
 	}
 }
 
@@ -277,6 +287,19 @@ button#L9-scroll2top {
 	background: $L9-clr-ydrk;
 }
 
+.L9-why-us-nbr {
+	padding: 24px;
+	background-color: $L9-clr-ltgrey;
+	display: inline-block;
+	color: #ffffff;
+}
+
+section.L9-clients-row {
+	height: 150px;
+	background-color: $L9-clr-ltgrey;
+	font-weight: bolder;
+}
+
 .L9-temp-drop-down-nav {
 	text-align: right;
 	padding-right: 32px;
@@ -290,6 +313,7 @@ button#L9-scroll2top {
 		
 		a {
 			text-decoration: none;
+			color: inherit;
 		}
 	}
 	
@@ -320,14 +344,14 @@ button#L9-scroll2top {
 	}
 	
 	h1.L9-hero-h1 {
-		color: $L9-dk-grey;
+		color: $L9-clr-dkgrey;
 		font-weight: 300;
 		font-size: 54px;
 		margin-bottom: 0;
 	}
 	
 	p {
-		color: $L9-dk-grey;
+		color: $L9-clr-dkgrey;
 		font-weight: 300;
 		font-size: 18px;
 		line-height: 30px;
