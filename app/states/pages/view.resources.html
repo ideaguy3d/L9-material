@@ -1,3 +1,9 @@
 <div layout="row" layout-align="center center" class="L9-text-center L9-bg-c1 L9-simple-centered-header">
     <div class="L9-resources-title">Resources</div>
 </div>
+
+<br>
+<div ng-repeat="card in [1,2,3,4,5,6,7,8,9]" class="L9-resource-card-container">
+    <l9-resource-card>card - {{card}}</l9-resource-card>
+    <div ng-show="(card % 3 === 0)" class="L9-break"></div>
+</div>

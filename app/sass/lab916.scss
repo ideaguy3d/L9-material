@@ -105,7 +105,7 @@ h2.L9-h2 {
 }
 
 section.L9-service-hero {
-	background: url(../../images/hero-banner.jpg) no-repeat center/cover;
+	background: url(https://lab916.wpengine.com/img/hero-banner.jpg) no-repeat center/cover;
 	color: #ffffff;
 	height: 60%;
 	
@@ -266,7 +266,7 @@ div.L9-para {
 }
 
 .L9-content-opt-fw-img {
-	background: url(../../images/L9-ph-lg.jpg) no-repeat center/cover;
+	background: url(https://lab916.wpengine.com/img/L9-ph-lg.jpg) no-repeat center/cover;
 	height: 70vh;
 }
 
@@ -405,9 +405,30 @@ section.L9-clients-row {
 	top: 25px;
 }
 
+.L9-break {
+	display: block;
+	margin: 4px 0;
+	background-color: $L9-clr-ydrk;
+	min-height: 8px;
+}
+
+.L9-resource-card-container {
+	display: inline-block;
+	margin: 12px;
+	max-width: 30%;
+	
+	l9-resource-card {
+		.img-top {
+			background: url(http://via.placeholder.com/300x150) no-repeat center/cover;
+			min-height: 150px;
+		}
+	}
+	
+}
+
 .L9-full-width-next-service-link {
 	min-height: 250px;
-	background: url(../../images/full-width-short-img.jpg) no-repeat center/cover;
+	background: url(https://lab916.wpengine.com/img/full-width-short-img.jpg) no-repeat center/cover;
 }
 
 .L9-sub-footer-container {
