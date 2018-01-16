@@ -3,8 +3,10 @@
         function () {
             return {
                 restrict: 'E',
+                scope: {
+                    resourceCardInfo: "="
+                },
                 templateUrl: 'layout/templates/temp.l9-resource-card.html',
-                controller: 'PagesCtrl',
                 transclude: true
             }
         }

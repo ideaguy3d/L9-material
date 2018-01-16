@@ -270,13 +270,26 @@ section.L9-clients-row {
   background-color: #c4bd14;
   min-height: 8px; }
 
-.L9-resource-card-container {
+.L9-height4 {
+  height: 400px; }
+
+div.L9-inline-block-resource-card-container {
+  display: inline-block;
+  width: 350px; }
+
+l9-resource-card .L9-resource-card-container {
   display: inline-block;
   margin: 12px;
-  max-width: 30%; }
-  .L9-resource-card-container l9-resource-card .img-top {
+  max-width: 32%;
+  min-width: 30%; }
+  l9-resource-card .L9-resource-card-container .img-top {
     background: url(http://via.placeholder.com/300x150) no-repeat center/cover;
     min-height: 150px; }
+    l9-resource-card .L9-resource-card-container .img-top h1, l9-resource-card .L9-resource-card-container .img-top h2, l9-resource-card .L9-resource-card-container .img-top h3, l9-resource-card .L9-resource-card-container .img-top h4, l9-resource-card .L9-resource-card-container .img-top h5, l9-resource-card .L9-resource-card-container .img-top h6 {
+      padding-top: 20px; }
+  l9-resource-card .L9-resource-card-container div.L9-resource-para {
+    height: 100px;
+    max-height: 100px; }
 
 .L9-full-width-next-service-link {
   min-height: 250px;

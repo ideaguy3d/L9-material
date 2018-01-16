@@ -102,7 +102,9 @@ angular.module('L9-app', [
                 })
                 .state('resources', {
                     url: "/resources",
-                    templateUrl: "states/pages/view.resources.html"
+                    templateUrl: "states/pages/view.resources.html",
+                    controller: 'PagesCtrl',
+                    controllerAs: 'pagesCtrl',
                 })
                 .state('careers', {
                     url: "/careers",

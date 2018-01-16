@@ -73,8 +73,6 @@ h2.L9-h2 {
 	padding: 32px;
 }
 
-
-
 .L9-bg-c1 {
 	background-color: $L9-clr-ltgrey;
 	min-height: 400px;
@@ -98,7 +96,6 @@ h2.L9-h2 {
 		padding-top: 80px;
 	}
 }
-
 
 .L9-w100 {
 	width: 100%;
@@ -412,18 +409,37 @@ section.L9-clients-row {
 	min-height: 8px;
 }
 
-.L9-resource-card-container {
+.L9-height4 {
+	height: 400px;
+}
+
+div.L9-inline-block-resource-card-container {
 	display: inline-block;
-	margin: 12px;
-	max-width: 30%;
-	
-	l9-resource-card {
+	width: 350px; // because most phones are at least 350px
+}
+
+l9-resource-card {
+	.L9-resource-card-container {
+		display: inline-block;
+		margin: 12px;
+		max-width: 32%;
+		min-width: 30%;
+		
 		.img-top {
 			background: url(http://via.placeholder.com/300x150) no-repeat center/cover;
 			min-height: 150px;
+			//width: 300px;
+			
+			h1, h2, h3, h4, h5, h6 {
+				padding-top: 20px;
+			}
+		}
+		
+		div.L9-resource-para {
+			height: 100px;
+			max-height: 100px;
 		}
 	}
-	
 }
 
 .L9-full-width-next-service-link {

@@ -2,8 +2,37 @@
     <div class="L9-resources-title">Resources</div>
 </div>
 
-<br>
-<div ng-repeat="card in [1,2,3,4,5,6,7,8,9]" class="L9-resource-card-container">
-    <l9-resource-card>card - {{card}}</l9-resource-card>
-    <div ng-show="(card % 3 === 0)" class="L9-break"></div>
+<br><br>
+
+<div ng-repeat="card in pagesCtrl.resourcesDataModel2" class="L9-inline-block-resource-card-container">
+    <md-card class="L9-height4">
+        <img ng-src="{{card.img}}" class="md-card-image" alt="Washed Out">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{card.h1}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <p>
+                {{card.para}}
+            </p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button class="md-icon-button" aria-label="Favorite">
+                <ng-md-icon icon="forward"></ng-md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Settings">
+                <ng-md-icon icon="share"></ng-md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Share">
+                <ng-md-icon icon="star"></ng-md-icon>
+            </md-button>
+        </md-card-actions>
+    </md-card>
 </div>
+
+<br><br><br><br>
+
+<h1>Old Resource Cards with Header in front of image</h1>
+<l9-resource-card ng-repeat="card in pagesCtrl.resourcesDataModel2" resource-card-info="card"></l9-resource-card>
+
