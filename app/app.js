@@ -3,11 +3,12 @@
  */
 
 angular.module('L9-app', [
-        'angular-md5',
-        'ui.router',
-        'ngMaterial',
-        'ngMdIcons'
-    ])
+    'angular-md5',
+    'ui.router',
+    'ngMaterial',
+    'ngMdIcons',
+    'smoothScroll'
+])
     .config(['$stateProvider', '$urlRouterProvider',
         function ($stateProvider, $urlRouterProvider) {
             $stateProvider
@@ -16,9 +17,7 @@ angular.module('L9-app', [
                     templateUrl: 'states/lab916/view.lab916.html',
                     controller: 'Lab916Ctrl',
                     controllerAs: 'lab',
-                    resolve: {
-
-                    }
+                    resolve: {}
                 })
                 .state('contact', {
                     url: '/contact',
@@ -41,7 +40,7 @@ angular.module('L9-app', [
                     }
                 })
                 .state('content-opt', {
-                    url:'/what-we-do/content-optimization',
+                    url: '/what-we-do/content-optimization',
                     templateUrl: 'states/what-we-do/view.content-opt.html',
                     controller: 'WhatWeDoCtrl',
                     controllerAs: 'wedo',
@@ -55,7 +54,7 @@ angular.module('L9-app', [
                     }
                 })
                 .state('promote', {
-                    url:'/what-we-do/advertising',
+                    url: '/what-we-do/advertising',
                     templateUrl: 'states/what-we-do/view.promote.html',
                     controller: 'WhatWeDoCtrl',
                     controllerAs: 'wedo',
@@ -69,7 +68,7 @@ angular.module('L9-app', [
                     }
                 })
                 .state('channel-management', {
-                    url:'/what-we-do/channel-management',
+                    url: '/what-we-do/channel-management',
                     templateUrl: 'states/what-we-do/view.channel-management.html',
                     controller: 'WhatWeDoCtrl',
                     controllerAs: 'wedo',
@@ -126,7 +125,13 @@ angular.module('L9-app', [
                 // just to practice various animation
                 .state('uit1', {
                     url: '/uit1',
-                    templateUrl: 'states/ui-prac/uit1.html',
+                    templateUrl: 'states/ui-prac/view.uit1.html',
+                    controller: 'uiPracCtrl',
+                    controllerAs: 'ui'
+                })
+                .state('uit2', {
+                    url: '/uit2',
+                    templateUrl: 'states/ui-prac/view.uit2.html',
                     controller: 'uiPracCtrl',
                     controllerAs: 'ui'
                 });

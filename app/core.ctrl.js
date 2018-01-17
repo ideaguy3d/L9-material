@@ -7,8 +7,8 @@
     "use strict";
 
     angular.module('L9-app').controller('CoreCtrl', ['$rootScope', '$scope', '$timeout', '$q', '$log',
-        '$location', '$anchorScroll',
-        function ($rootScope, $scope, $timeout, $q, $log, $location, $anchorScroll) {
+        '$location', '$anchorScroll', 'smoothScroll',
+        function ($rootScope, $scope, $timeout, $q, $log, $location, $anchorScroll, smoothScroll) {
             checkUrl();
             $rootScope.ccShowHomeSubFooter = true;
 
@@ -17,8 +17,11 @@
             $scope.ccTempDrop = false;
 
             $scope.ccScrollTop = function () {
-                $location.hash('L9-main-nav');
-                $anchorScroll();
+                //-- old non animated scroll
+                // $location.hash('L9-main-nav');
+                // $anchorScroll();
+                var elem = document.getElementById('L9-main-nav');
+                smoothScroll(elem);
             };
 
             $scope.ccToggleTempDrop = function () {

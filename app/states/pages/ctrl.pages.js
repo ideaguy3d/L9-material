@@ -1,7 +1,7 @@
 (function () {
     angular.module('L9-app')
-        .controller("PagesCtrl", ['$location', '$anchorScroll',
-            function ($location, $anchorScroll) {
+        .controller("PagesCtrl", ['$location', '$anchorScroll', 'smoothScroll',
+            function ($location, $anchorScroll, smoothScroll) {
                 var vm = this;
                 vm.resourcesDataModel2 = [
                     {
@@ -60,10 +60,16 @@
                     }
                 ];
 
-                vm.heroScrollDown = function () {
+                vm.heroScrollDown2 = function () {
                     console.log("jha - heroScrollDown invoked...");
                     $location.hash("L9-view-row1");
                     $anchorScroll();
+                };
+
+                vm.heroScrollDown = function () {
+                    console.log("jha - new smoothScroll serive should be invoked !!");
+                    var elem = document.getElementById('L9-view-row1');
+                    smoothScroll(elem);
                 };
 
                 vm.careerTemplateInfo = {
