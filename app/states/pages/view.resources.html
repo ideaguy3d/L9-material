@@ -4,32 +4,36 @@
 
 <br><br>
 
-<div ng-repeat="card in pagesCtrl.resourcesDataModel2" class="L9-inline-block-resource-card-container">
-    <md-card class="L9-height4">
-        <img ng-src="{{card.img}}" class="md-card-image" alt="Washed Out">
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline">{{card.h1}}</span>
-            </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-            <p>
-                {{card.para}}
-            </p>
-        </md-card-content>
-        <md-card-actions layout="row" layout-align="end center">
-            <md-button class="md-icon-button" aria-label="Favorite">
-                <ng-md-icon icon="forward"></ng-md-icon>
-            </md-button>
-            <md-button class="md-icon-button" aria-label="Settings">
-                <ng-md-icon icon="share"></ng-md-icon>
-            </md-button>
-            <md-button class="md-icon-button" aria-label="Share">
-                <ng-md-icon icon="star"></ng-md-icon>
-            </md-button>
-        </md-card-actions>
-    </md-card>
-</div>
+<section layout="row" layout-align="center center">
+    <div class="L9-resource-card-width">
+        <div ng-repeat="card in pagesCtrl.resourcesDataModel2" class="L9-inline-block-resource-card-container">
+            <md-card class="L9-height4">
+                <img ng-src="{{card.img}}" class="md-card-image" alt="Washed Out">
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">{{card.h1}}</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <p>
+                        {{card.para}}
+                    </p>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="end center">
+                    <md-button class="md-icon-button" aria-label="Favorite">
+                        <ng-md-icon icon="forward"></ng-md-icon>
+                    </md-button>
+                    <md-button class="md-icon-button" aria-label="Settings">
+                        <ng-md-icon icon="share"></ng-md-icon>
+                    </md-button>
+                    <md-button class="md-icon-button" aria-label="Share">
+                        <ng-md-icon icon="star"></ng-md-icon>
+                    </md-button>
+                </md-card-actions>
+            </md-card>
+        </div>
+    </div>
+</section>
 
 <br><br><br><br>
 

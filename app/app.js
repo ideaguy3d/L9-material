@@ -98,21 +98,29 @@ angular.module('L9-app', [
                 })
                 .state('service-puddle', {
                     url: "/service-puddle",
-                    templateUrl: "states/pages/view.service-puddle.html"
+                    templateUrl: "states/pages/view.service-puddle.html",
+                    controller: 'PagesCtrl',
+                    controllerAs: 'pagesCtrl'
                 })
                 .state('resources', {
                     url: "/resources",
                     templateUrl: "states/pages/view.resources.html",
                     controller: 'PagesCtrl',
-                    controllerAs: 'pagesCtrl',
+                    controllerAs: 'pagesCtrl'
                 })
                 .state('careers', {
                     url: "/careers",
-                    templateUrl: "states/pages/view.career.html"
+                    templateUrl: "states/pages/view.career.html",
+                    controller: "PagesCtrl",
+                    controllerAs: "pagesCtrl"
                 })
                 .state('why-us', {
                     url: "/why-us",
                     templateUrl: "states/pages/view.why-us.html"
+                })
+                .state('blog', {
+                    url: "/blog",
+                    templateUrl: "states/pages/view.blog.html"
                 })
                 // -----------------------------------
                 // just to practice various animation

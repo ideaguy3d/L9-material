@@ -60,6 +60,26 @@
                     }
                 ];
 
+                vm.careerTemplateInfo = {
+                    info: {
+                        name: "Lab 916 Career's",
+                        bg: { // this is being linked to ngStyle attr dir
+                            'background': 'url(http://careerconnections.nj.gov/careerconnections/images/hero/RightCareer-480922793.jpg) no-repeat center/cover'
+                        },
+                        pos: "end start"
+                    }
+                };
+
+                vm.servicePuddleTemplateInfo = {
+                    info: {
+                        name: "Service Puddle",
+                        bg: { // this is being linked to ngStyle attr dir
+                            'background': 'url(http://lab916.wpengine.com/img/L9-ph-lg.jpg) no-repeat center/cover'
+                        },
+                        pos: "end end"
+                    }
+                };
+
                 vm.resourceCardImagePath = "http://via.placeholder.com/300x150"
             }
         ]);

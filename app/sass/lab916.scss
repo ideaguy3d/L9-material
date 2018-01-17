@@ -356,6 +356,10 @@ section.L9-clients-row {
 	height: 100vh;
 }
 
+.L9-full-view-hero {
+	height: 100vh;
+}
+
 .L9-hero-landing {
 	//padding: 84px 0 55px 0px;
 	
@@ -413,9 +417,14 @@ section.L9-clients-row {
 	height: 400px;
 }
 
+.L9-resource-card-width {
+	width: 1128px;
+}
+
 div.L9-inline-block-resource-card-container {
 	display: inline-block;
 	width: 350px; // because most phones are at least 350px
+	margin: 20px 8px;
 }
 
 l9-resource-card {

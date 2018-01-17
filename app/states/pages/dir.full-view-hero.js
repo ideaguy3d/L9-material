@@ -1,10 +1,12 @@
-(function(){
-    angular.module('L9-app').directive('l9FullPageHero', [
-        function(){
+(function () {
+    angular.module('L9-app').directive('l9FullViewHero', [
+        function () {
             return {
                 restrict: 'E',
                 templateUrl: 'layout/templates/temp.full-view-hero.html',
-                controller: 'PagesCtrl'
+                scope: {
+                    l9TemplateInfo: "="
+                }
             }
         }
     ]);

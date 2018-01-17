@@ -230,6 +230,9 @@ section.L9-clients-row {
   background: url(../../images/L9-ph-lg.jpg) no-repeat center/cover;
   height: 100vh; }
 
+.L9-full-view-hero {
+  height: 100vh; }
+
 .L9-hero-landing .L9-hero-landing-inner {
   width: 1020px; }
 
@@ -273,9 +276,13 @@ section.L9-clients-row {
 .L9-height4 {
   height: 400px; }
 
+.L9-resource-card-width {
+  width: 1128px; }
+
 div.L9-inline-block-resource-card-container {
   display: inline-block;
-  width: 350px; }
+  width: 350px;
+  margin: 20px 8px; }
 
 l9-resource-card .L9-resource-card-container {
   display: inline-block;
