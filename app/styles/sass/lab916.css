@@ -1,5 +1,59 @@
-h1, h2, h3, h4, h5, h6, p {
+body {
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
   font-family: Roboto, sans-serif; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 29px; }
+
+h3 {
+  font-size: 23px;
+  font-weight: 400; }
+
+/********************************
+    -- L9 initial ui code --
+**********************************/
+/**
+    -- ng anim prac --
+**/
+.div-inline {
+  display: inline-block; }
+
+.left-150 {
+  position: absolute;
+  left: -160px; }
+
+#prac1-wrapper.jbaseclass-add,
+#prac1-wrapper.jbaseclass-remove {
+  transition: padding 200ms linear; }
+
+#prac1-wrapper.jbaseclass,
+#prac1-wrapper.jbaseclass-add-active {
+  padding-left: 250px; }
+
+#prac1-wrapper.jbaseclass-add #sidediv-wrapper,
+#prac1-wrapper.jbaseclass-remove #sidediv-wrapper,
+#prac1-wrapper.jbaseclass-add .left-150,
+#prac1-wrapper.jbaseclass-remove .left-150 {
+  transition: left 200ms linear; }
+
+#prac1-wrapper.jbaseclass-add-active #sidediv-wrapper,
+#prac1-wrapper.jbaseclass #sidediv-wrapper {
+  left: 150px; }
+
+#prac1-wrapper.jbaseclass-add-active .left-150,
+#prac1-wrapper.jbaseclass .left-150 {
+  left: 320px; }
+
+md-input-container.md-icon-float > ng-md-icon {
+  top: 8px;
+  left: 2px;
+  right: auto; }
 
 ul {
   text-decoration: none;
