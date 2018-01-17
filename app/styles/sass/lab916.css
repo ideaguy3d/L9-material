@@ -288,9 +288,10 @@ l9-resource-card .L9-resource-card-container {
   display: inline-block;
   margin: 12px;
   max-width: 32%;
-  min-width: 30%; }
+  min-width: 30%;
+  box-shadow: 5px 10px 8px #8C9BAA; }
   l9-resource-card .L9-resource-card-container .img-top {
-    background: url(http://via.placeholder.com/300x150) no-repeat center/cover;
+    background: url(http://via.placeholder.com/300x250) no-repeat center/cover;
     min-height: 150px; }
     l9-resource-card .L9-resource-card-container .img-top h1, l9-resource-card .L9-resource-card-container .img-top h2, l9-resource-card .L9-resource-card-container .img-top h3, l9-resource-card .L9-resource-card-container .img-top h4, l9-resource-card .L9-resource-card-container .img-top h5, l9-resource-card .L9-resource-card-container .img-top h6 {
       padding-top: 20px; }

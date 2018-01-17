@@ -433,9 +433,10 @@ l9-resource-card {
 		margin: 12px;
 		max-width: 32%;
 		min-width: 30%;
+		box-shadow: 5px 10px 8px $L9-clr-ltgrey;
 		
 		.img-top {
-			background: url(http://via.placeholder.com/300x150) no-repeat center/cover;
+			background: url(http://via.placeholder.com/300x250) no-repeat center/cover;
 			min-height: 150px;
 			//width: 300px;
 			

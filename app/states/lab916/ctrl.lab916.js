@@ -45,8 +45,6 @@
 
             vm.channelManage = "Channel Management";
             vm.channelManagePara = "We don’t wait for you to tell us what you want for your channel, we take proactive steps to leverage Amazon’s technologies on your behalf. Avoid the beginner mistakes that can cost you time and money, and allow our expertise to get your listings set up just the way Amazon likes them. We’ll help you with listing management, repricer setup, brand registration, and international selling to make sure that you get the most out of your Amazon presence.  ";
-
-
         }
     ]);
 }());

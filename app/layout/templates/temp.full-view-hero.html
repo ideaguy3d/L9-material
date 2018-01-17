@@ -1,17 +1,17 @@
 <!-- Hero Landing -->
-<section ng-show="l9TemplateInfo.info.pos === 'end start'" layout="row" layout-xs="column" layout-padding layout-align="end start"
+<section ng-show="l9TemplateInfo.info.pos === 'end start'" layout="row" layout-xs="column"
+         layout-align="end start" layout-padding
          class="L9-full-view-hero" ng-style="l9TemplateInfo.info.bg">
     <div flex="33" class="L9-text-center">
         <h1>{{l9TemplateInfo.info.name}}</h1>
-        <p>
-            <a href="">
-                <ng-md-icon icon="arrow_downward"></ng-md-icon>
-            </a>
-        </p>
+        <md-button class="md-fab md-primary md-hue-2" ng-click="l9HeroDown()" aria-label="Favorite">
+            <ng-md-icon icon="keyboard_arrow_down"></ng-md-icon>
+        </md-button>
     </div>
 </section>
 
-<section ng-show="l9TemplateInfo.info.pos === 'end end'" layout="row" layout-xs="column" layout-padding layout-align="end end"
+<section ng-show="l9TemplateInfo.info.pos === 'end end'" layout="row" layout-xs="column" layout-padding
+         layout-align="end end"
          class="L9-full-view-hero" ng-style="l9TemplateInfo.info.bg">
     <div flex="33" class="L9-text-center">
         <h1>{{l9TemplateInfo.info.name}}</h1>

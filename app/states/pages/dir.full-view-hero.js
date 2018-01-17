@@ -5,7 +5,8 @@
                 restrict: 'E',
                 templateUrl: 'layout/templates/temp.full-view-hero.html',
                 scope: {
-                    l9TemplateInfo: "="
+                    l9TemplateInfo: "=",
+                    l9HeroDown: "&"
                 }
             }
         }

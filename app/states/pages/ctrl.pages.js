@@ -1,7 +1,7 @@
 (function () {
     angular.module('L9-app')
-        .controller("PagesCtrl", [
-            function () {
+        .controller("PagesCtrl", ['$location', '$anchorScroll',
+            function ($location, $anchorScroll) {
                 var vm = this;
                 vm.resourcesDataModel2 = [
                     {
@@ -59,6 +59,12 @@
                         img: 'http://via.placeholder.com/300x150'
                     }
                 ];
+
+                vm.heroScrollDown = function () {
+                    console.log("jha - heroScrollDown invoked...");
+                    $location.hash("L9-view-row1");
+                    $anchorScroll();
+                };
 
                 vm.careerTemplateInfo = {
                     info: {
