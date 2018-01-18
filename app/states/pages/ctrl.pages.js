@@ -67,7 +67,6 @@
                 };
 
                 vm.heroScrollDown = function () {
-                    console.log("jha - new smoothScroll serive should be invoked !!");
                     var elem = document.getElementById('L9-view-row1');
                     smoothScroll(elem);
                 };

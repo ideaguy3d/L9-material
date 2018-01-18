@@ -16,7 +16,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: rgb(51,51,51);
+	color: rgb(51, 51, 51);
 	font-family: Roboto, sans-serif;
 }
 
@@ -54,7 +54,6 @@ h3 {
 #prac1-wrapper.jbaseclass-remove {
 	transition: padding 200ms linear;
 }
-
 #prac1-wrapper.jbaseclass,
 #prac1-wrapper.jbaseclass-add-active {
 	padding-left: 250px;
@@ -66,15 +65,52 @@ h3 {
 #prac1-wrapper.jbaseclass-remove .left-150 {
 	transition: left 200ms linear;
 }
-
 #prac1-wrapper.jbaseclass-add-active #sidediv-wrapper,
 #prac1-wrapper.jbaseclass #sidediv-wrapper {
 	left: 150px;
 }
-
 #prac1-wrapper.jbaseclass-add-active .left-150,
 #prac1-wrapper.jbaseclass .left-150 {
 	left: 320px;
+}
+
+//L9-base-temp-drop
+#L9-temp2-drop-nav.L9-base-temp-drop-add,
+#L9-temp2-drop-nav.L9-base-temp-drop-remove {
+	transition: all 200ms linear;
+}
+#L9-temp2-drop-nav.L9-base-temp-drop,
+#L9-temp2-drop-nav.L9-base-temp-drop-add-active {
+	top: -38px;
+	opacity: 1;
+	display: block;
+	height: 35px;
+}
+
+.L9-temp-drop-down-nav {
+	text-align: right;
+	padding-right: 32px;
+	position: relative;
+	top: -125px;
+	opacity: 0;
+	height: 0;
+	
+	li.L9-link {
+		cursor: pointer;
+		padding: 8px 16px;
+		display: inline-block;
+		transition: all 200ms linear;
+		
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+	
+	li.L9-link:hover {
+		background-color: $L9-clr-ymed;
+		color: #ffffff;
+	}
 }
 
 md-input-container.md-icon-float > ng-md-icon {
@@ -86,6 +122,40 @@ md-input-container.md-icon-float > ng-md-icon {
 ul {
 	text-decoration: none;
 	list-style: none;
+}
+
+.L9-service-puddle-height4 {
+	height: 440px;
+	
+	.L9-h1 {
+		margin-top: 6px;
+	}
+}
+
+section.L9-service-puddle-x1 {
+	
+	div.L9-x1-left	{
+		background: url(http://via.placeholder.com/600x800) no-repeat center/cover;
+		height: 100vh;
+	}
+	
+	div.L9-x1-left-proto {
+		height: 49.9vh;
+		background-color: $L9-clr-ymed;
+		padding: 2px;
+	}
+	
+	.ml {
+		margin-left: 2px;
+	}
+	
+	.mb {
+		margin-bottom: 2px;
+	}
+	
+	.mr {
+		margin-right: 2px;
+	}
 }
 
 .L9-w800px {
@@ -386,29 +456,6 @@ section.L9-clients-row {
 	height: 150px;
 	background-color: $L9-clr-ltgrey;
 	font-weight: bolder;
-}
-
-.L9-temp-drop-down-nav {
-	text-align: right;
-	padding-right: 32px;
-	position: relative;
-	top: -38px;
-	
-	li.L9-link {
-		cursor: pointer;
-		padding: 8px 16px;
-		display: inline-block;
-		
-		a {
-			text-decoration: none;
-			color: inherit;
-		}
-	}
-	
-	li.L9-link:hover {
-		background-color: $L9-clr-ymed;
-		color: #ffffff;
-	}
 }
 
 .L9-content-opt-row2 {

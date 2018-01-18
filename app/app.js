@@ -95,9 +95,15 @@ angular.module('L9-app', [
                         }
                     }
                 })
-                .state('service-puddle', {
-                    url: "/service-puddle",
-                    templateUrl: "states/pages/view.service-puddle.html",
+                .state('service-puddle1', {
+                    url: "/service-puddle1",
+                    templateUrl: "states/pages/view.service-puddle1.html",
+                    controller: 'PagesCtrl',
+                    controllerAs: 'pagesCtrl'
+                })
+                .state('service-puddle2', {
+                    url: "/service-puddle2",
+                    templateUrl: "states/pages/view.service-puddle2.html",
                     controller: 'PagesCtrl',
                     controllerAs: 'pagesCtrl'
                 })

@@ -11,7 +11,6 @@
             vm.toggle = false;
             vm.togglePracNav = function () {
                 vm.toggle = !vm.toggle;
-                console.log("jha - sidediv should have toggled...");
             }
         }
     ]);

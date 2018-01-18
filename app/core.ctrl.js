@@ -15,17 +15,22 @@
             $scope.ccCurrentUser = "";
             $scope.coreEdhubState = false;
             $scope.ccTempDrop = false;
-
-            $scope.ccScrollTop = function () {
-                //-- old non animated scroll
-                // $location.hash('L9-main-nav');
-                // $anchorScroll();
-                var elem = document.getElementById('L9-main-nav');
-                smoothScroll(elem);
-            };
+            $scope.ccTempDropAnim = false;
 
             $scope.ccToggleTempDrop = function () {
+                console.log("jha - $scope.ccToggleTempDrop invoked :)");
                 $scope.ccTempDrop = !$scope.ccTempDrop;
+                $scope.ccTempDropAnim = !$scope.ccTempDropAnim;
+            };
+
+            $scope.ccScrollTop = function () {
+                /*
+                //-- old non animated scroll:
+                // $location.hash('L9-main-nav');
+                // $anchorScroll();
+                */
+                var elem = document.getElementById('L9-main-nav');
+                smoothScroll(elem);
             };
 
             $scope.ccSetCurrentUser = function (userEmail) {

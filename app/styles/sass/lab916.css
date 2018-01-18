@@ -50,6 +50,36 @@ h3 {
 #prac1-wrapper.jbaseclass .left-150 {
   left: 320px; }
 
+#L9-temp2-drop-nav.L9-base-temp-drop-add,
+#L9-temp2-drop-nav.L9-base-temp-drop-remove {
+  transition: all 200ms linear; }
+
+#L9-temp2-drop-nav.L9-base-temp-drop,
+#L9-temp2-drop-nav.L9-base-temp-drop-add-active {
+  top: -38px;
+  opacity: 1;
+  display: block;
+  height: 35px; }
+
+.L9-temp-drop-down-nav {
+  text-align: right;
+  padding-right: 32px;
+  position: relative;
+  top: -125px;
+  opacity: 0;
+  height: 0; }
+  .L9-temp-drop-down-nav li.L9-link {
+    cursor: pointer;
+    padding: 8px 16px;
+    display: inline-block;
+    transition: all 200ms linear; }
+    .L9-temp-drop-down-nav li.L9-link a {
+      text-decoration: none;
+      color: inherit; }
+  .L9-temp-drop-down-nav li.L9-link:hover {
+    background-color: #eccf2f;
+    color: #ffffff; }
+
 md-input-container.md-icon-float > ng-md-icon {
   top: 8px;
   left: 2px;
@@ -58,6 +88,29 @@ md-input-container.md-icon-float > ng-md-icon {
 ul {
   text-decoration: none;
   list-style: none; }
+
+.L9-service-puddle-height4 {
+  height: 440px; }
+  .L9-service-puddle-height4 .L9-h1 {
+    margin-top: 6px; }
+
+section.L9-service-puddle-x1 div.L9-x1-left {
+  background: url(http://via.placeholder.com/600x800) no-repeat center/cover;
+  height: 100vh; }
+
+section.L9-service-puddle-x1 div.L9-x1-left-proto {
+  height: 49.9vh;
+  background-color: #eccf2f;
+  padding: 2px; }
+
+section.L9-service-puddle-x1 .ml {
+  margin-left: 2px; }
+
+section.L9-service-puddle-x1 .mb {
+  margin-bottom: 2px; }
+
+section.L9-service-puddle-x1 .mr {
+  margin-right: 2px; }
 
 .L9-w800px {
   width: 800px; }
@@ -259,22 +312,6 @@ section.L9-clients-row {
   height: 150px;
   background-color: #8C9BAA;
   font-weight: bolder; }
-
-.L9-temp-drop-down-nav {
-  text-align: right;
-  padding-right: 32px;
-  position: relative;
-  top: -38px; }
-  .L9-temp-drop-down-nav li.L9-link {
-    cursor: pointer;
-    padding: 8px 16px;
-    display: inline-block; }
-    .L9-temp-drop-down-nav li.L9-link a {
-      text-decoration: none;
-      color: inherit; }
-  .L9-temp-drop-down-nav li.L9-link:hover {
-    background-color: #eccf2f;
-    color: #ffffff; }
 
 .L9-content-opt-row2 div.rhs {
   background: url(http://via.placeholder.com/500x900) no-repeat center/cover;

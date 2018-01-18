@@ -1,0 +1,97 @@
+<l9-full-view-hero l9-template-info="pagesCtrl.servicePuddleTemplateInfo"></l9-full-view-hero>
+
+<br><br>
+
+<!-- some copy with text on left and right -->
+<section id="L9-view-row1" layout="row" layout-xs="column" layout-sm="column" layout-align="center center" layout-padding>
+    <div flex="45" class="L9-service-puddle-height4">
+        <h1 class="L9-h1">Service puddle view and some other random text</h1>
+        <p>June 2nd, 2018</p>
+    </div>
+    <div flex="45" class="L9-service-puddle-height4">
+        <p>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut commodi consectetur cupiditate delectus eaque eligendi eos excepturi fuga laboriosam laborum natus possimus quibusdam sed similique sint temporibus unde, voluptatem voluptatum?</span>
+            <span>Aut blanditiis dolorem doloremque est et expedita harum in modi, necessitatibus neque nesciunt officiis omnis porro qui quia quisquam quo ratione repellat rerum sequi sint unde veniam veritatis vero voluptas.</span>
+        </p>
+        <h2>Lorem ipsum dolor sit amet perferendis praesentium recusandae repellat similique. Asperiores beatae earum maiores? Dolor doloremque earum exercitationem maiores molestias?</h2>
+    </div>
+</section>
+
+<br><br>
+
+<!-- The owl carousal -->
+<section layout="row">
+    <div flex="70" class="owl-carousel owl-theme">
+        <div class="item"><h4>1</h4></div>
+        <div class="item"><h4>2</h4></div>
+        <div class="item"><h4>3</h4></div>
+        <div class="item"><h4>4</h4></div>
+        <div class="item"><h4>5</h4></div>
+        <div class="item"><h4>6</h4></div>
+        <div class="item"><h4>7</h4></div>
+        <div class="item"><h4>8</h4></div>
+        <div class="item"><h4>9</h4></div>
+        <div class="item"><h4>10</h4></div>
+        <div class="item"><h4>11</h4></div>
+        <div class="item"><h4>12</h4></div>
+    </div>
+    <div flex="25">
+        <h2>Soon to be side button</h2>
+    </div>
+</section>
+<script type="text/javascript">
+    jQuery('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+</script>
+
+<br><br>
+
+<!-- The Exotic side by side layout -->
+<section layout="row" layout-sm="column" layout-xs="column" layout-align="center center"
+        class="L9-service-puddle-x1">
+    <div flex="40" class="L9-x1-left">
+
+    </div>
+    <div flex="50">
+        <div layout="column">
+            <div flex>
+                <div layout="row">
+                    <div flex class="L9-x1-left-proto ml mb">Top Left side</div>
+                    <div flex class="L9-x1-left-proto ml mb">Top Right side</div>
+                </div>
+            </div>
+            <div flex>
+                <div layout="row">
+                    <div flex class="L9-x1-left-proto ml">Bottom Left side</div>
+                    <div flex class="L9-x1-left-proto ml">Bottom Right side</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br><br>
+
+<!-- TURN INTO A DIRECTIVE COMP !!!!!!!! -->
+<!-- Full width link to next service -->
+<section id="full-width-link2service-promoting" layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+    <div flex class="L9-full-width-next-service-link"></div>
+    <div flex="30" layout-padding>
+        <p>NEXT</p>
+        <h2><a href="">Next Page</a></h2>
+    </div>
+</section>
