@@ -15,6 +15,12 @@ h3 {
   font-size: 23px;
   font-weight: 400; }
 
+h1.L9-hero-h1 {
+  color: #52565f;
+  font-weight: 300;
+  font-size: 54px;
+  margin-bottom: 0; }
+
 /********************************
     -- L9 initial ui code --
 **********************************/
@@ -116,7 +122,7 @@ section.L9-service-puddle-x1 .mr {
   width: 800px; }
 
 .L9-opa50 {
-  opacity: 0.5;
+  opacity: 0.4;
   border: solid 1px #52565f; }
 
 .L9-what-we-do-title {
@@ -136,6 +142,13 @@ h2.L9-h2 {
   font-size: 46px;
   color: #eccf2f; }
 
+.L9-op5 {
+  opacity: 0.4; }
+
+.L9-pad-horiz1 {
+  padding-left: 116px;
+  padding-right: 116px; }
+
 .L9-search-form {
   display: inline-block;
   float: right;
@@ -151,7 +164,7 @@ h2.L9-h2 {
     width: 100vw; } }
 
 .L9-services-quote-txt {
-  margin-top: 95px;
+  margin-top: 38px;
   padding: 32px; }
 
 .L9-bg-c1 {
@@ -163,6 +176,13 @@ h2.L9-h2 {
     font-weight: bolder;
     font-size: 94px;
     text-transform: uppercase; }
+  .L9-bg-c1 h1.rh1 {
+    padding-top: 0;
+    color: #8C9BAA;
+    font-weight: bolder; }
+  .L9-bg-c1 div.rc {
+    background-color: #52565f;
+    text-align: center; }
 
 .L9-bg-c2 {
   background-color: #8C9BAA;
@@ -174,7 +194,7 @@ h2.L9-h2 {
   width: 100%; }
 
 section.L9-service-hero {
-  background: url(https://lab916.wpengine.com/img/hero-banner.jpg) no-repeat center/cover;
+  background: url(http://lab916.wpengine.com/img/t-service-hero.jpg) no-repeat center/cover;
   color: #ffffff;
   height: 60%; }
   section.L9-service-hero h1, section.L9-service-hero h2, section.L9-service-hero h3 {
@@ -261,11 +281,13 @@ p.L9-p-sbs {
   font-size: 16px;
   color: #8C9BAA; }
 
-div.L9-para {
+div.L9-para, p.L9-para {
   color: #52565f;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px; }
+  div.L9-para strong, p.L9-para strong {
+    font-size: 22px; }
 
 .L9-sub-footer-translude {
   color: #c4bd14;
@@ -354,10 +376,6 @@ section.L9-clients-row {
   color: #aaaaaa;
   font-size: 16px; }
 
-.L9-simple-centered-header {
-  position: relative;
-  top: 25px; }
-
 .L9-break {
   display: block;
   margin: 4px 0;
@@ -395,7 +413,11 @@ l9-resource-card .L9-resource-card-container {
   background: url(https://lab916.wpengine.com/img/full-width-short-img.jpg) no-repeat center/cover; }
 
 .L9-sub-footer-container {
-  padding: 8px; }
+  margin: 48px 0;
+  padding: 28px; }
+  .L9-sub-footer-container .L9-sub-footer-col {
+    border: solid rgba(140, 155, 170, 0.5) 1px;
+    cursor: pointer; }
 
 .L9-footer-container {
   background: #424242;

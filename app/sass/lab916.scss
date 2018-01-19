@@ -33,6 +33,13 @@ h3 {
 	font-weight: 400;
 }
 
+h1.L9-hero-h1 {
+	color: $L9-clr-dkgrey;
+	font-weight: 300;
+	font-size: 54px;
+	margin-bottom: 0;
+}
+
 /********************************
     -- L9 initial ui code --
 **********************************/
@@ -163,7 +170,7 @@ section.L9-service-puddle-x1 {
 }
 
 .L9-opa50 {
-	opacity: 0.5;
+	opacity: 0.4;
 	border: solid 1px $L9-clr-dkgrey;
 }
 
@@ -188,6 +195,15 @@ h2.L9-h2 {
 	color: $L9-clr-ymed;
 }
 
+.L9-op5 {
+	opacity: 0.4;
+}
+
+.L9-pad-horiz1 {
+	padding-left: 116px;
+	padding-right: 116px;
+}
+
 .L9-search-form {
 	display: inline-block;
 	float: right;
@@ -207,9 +223,11 @@ h2.L9-h2 {
 }
 
 .L9-services-quote-txt {
-	margin-top: 95px;
+	margin-top: 38px;
 	padding: 32px;
 }
+
+
 
 .L9-bg-c1 {
 	background-color: $L9-clr-ltgrey;
@@ -223,6 +241,17 @@ h2.L9-h2 {
 		font-weight: bolder;
 		font-size: 94px;
 		text-transform: uppercase;
+	}
+	
+	h1.rh1 {
+		padding-top: 0;
+		color: $L9-clr-ltgrey;
+		font-weight: bolder;
+	}
+	
+	div.rc {
+		background-color: $L9-clr-dkgrey;
+		text-align: center;
 	}
 }
 
@@ -240,7 +269,7 @@ h2.L9-h2 {
 }
 
 section.L9-service-hero {
-	background: url(https://lab916.wpengine.com/img/hero-banner.jpg) no-repeat center/cover;
+	background: url(http://lab916.wpengine.com/img/t-service-hero.jpg) no-repeat center/cover;
 	color: #ffffff;
 	height: 60%;
 	
@@ -387,11 +416,15 @@ p.L9-p-sbs {
 	color: $L9-clr-ltgrey;
 }
 
-div.L9-para {
+div.L9-para, p.L9-para {
 	color: $L9-clr-dkgrey;
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 30px;
+	
+	strong {
+		font-size: 22px;
+	}
 }
 
 .L9-sub-footer-translude {
@@ -516,11 +549,6 @@ section.L9-clients-row {
 	font-size: 16px;
 }
 
-.L9-simple-centered-header {
-	position: relative;
-	top: 25px;
-}
-
 .L9-break {
 	display: block;
 	margin: 4px 0;
@@ -573,7 +601,13 @@ l9-resource-card {
 }
 
 .L9-sub-footer-container {
-	padding: 8px;
+	margin: 48px 0;
+	padding: 28px;
+	
+	.L9-sub-footer-col {
+		border: solid rgba(140, 155, 170, 0.5) 1px;
+		cursor: pointer;
+	}
 }
 
 .L9-footer-container {

@@ -33,13 +33,9 @@
                 smoothScroll(elem);
             };
 
-            $scope.ccSetCurrentUser = function (userEmail) {
-                $scope.ccCurrentUser = userEmail;
-            };
-
             function checkUrl() {
                 console.log("jha - checkUrl() invoked... \n");
-                if ($location.url() === '/') {
+                if ($location.url()) {
                     $rootScope.ccShowHomeSubFooter = true;
                 }
             }
