@@ -45,44 +45,47 @@
 
 <!-- L9-material Horizontal navigation -->
 <div id="L9-main-nav" class="topnav">
-    <a href="#" class="L9-nav-logo">
+    <a ui-sref="landing" class="L9-nav-logo">
         <img src="https://static1.squarespace.com/static/58486f891b631beb1bea6ebe/t/5871c70e6b8f5b2a8ee6d964/1500779111862/?format=1500w"
              alt="logo" width="80px">
         <small>AMAZON OPTIMIZATION SPECIALISTS</small>
     </a>
 
-    <!--<a class="active" href="#home">Home</a>-->
-    <a ng-click="ccToggleTempDrop()" class="L9-whyL9-dropdown">
+    <a ng-click="ccToggleTempDrop()" class="L9-whyL9-dropdown L9-nav-link">
         WHY LAB916 <strong><ng-md-icon icon="keyboard_arrow_down"></ng-md-icon></strong>
     </a>
-    <a ui-sref="contact">GET A QUOTE</a>
-    <a ui-sref="case-studies">CASE STUDIES</a>
-    <a ui-sref="what-we-do">SERVICES</a>
-    <md-content class="md-padding">
-        <form ng-submit="$event.preventDefault()">
-            <md-autocomplete
-                    ng-disabled="ctrl.isDisabled"
-                    md-no-cache="ctrl.noCache"
-                    md-selected-item="ctrl.selectedItem"
-                    md-search-text-change="ctrl.searchTextChange(ctrl.searchText)"
-                    md-search-text="ctrl.searchText"
-                    md-selected-item-change="ctrl.selectedItemChange(item)"
-                    md-items="item in ctrl.querySearch(ctrl.searchText)"
-                    md-item-text="item.display"
-                    md-min-length="1"
-                    placeholder="Search">
-                <md-item-template>
-                    <span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item.display}}</span>
-                </md-item-template>
-                <md-not-found>
-                    No states matching "{{ctrl.searchText}}" were found.
-                    <a ng-click="ctrl.newState(ctrl.searchText)">Create a new one!</a>
-                </md-not-found>
-            </md-autocomplete>
-        </form>
-    </md-content>
+    <a ui-sref="contact" class="L9-nav-link">GET A QUOTE</a>
+    <a ui-sref="case-studies" class="L9-nav-link">CASE STUDIES</a>
+    <a ui-sref="what-we-do" class="L9-nav-link">SERVICES</a>
+    <div id="L9-search-bar" >
+        <md-content class="md-padding">
+            <form ng-submit="$event.preventDefault()">
+                <md-autocomplete
+                        ng-disabled="ctrl.isDisabled"
+                        md-no-cache="ctrl.noCache"
+                        md-selected-item="ctrl.selectedItem"
+                        md-search-text-change="ctrl.searchTextChange(ctrl.searchText)"
+                        md-search-text="ctrl.searchText"
+                        md-selected-item-change="ctrl.selectedItemChange(item)"
+                        md-items="item in ctrl.querySearch(ctrl.searchText)"
+                        md-item-text="item.display"
+                        md-min-length="1"
+                        placeholder="Search">
+                    <md-item-template>
+                        <span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item.display}}</span>
+                    </md-item-template>
+                    <md-not-found>
+                        No states matching "{{ctrl.searchText}}" were found.
+                        <a ng-click="ctrl.newState(ctrl.searchText)">Create a new one!</a>
+                    </md-not-found>
+                </md-autocomplete>
+            </form>
+        </md-content>
+    </div>
+    <a href="javascript:void(0);" onclick="LabMainNavFunction()"
+       class="L9-icon"><ng-md-icon icon="reorder"></ng-md-icon></a>
 </div>
-
+<!-- temporary drop down navigation -->
 <div id="L9-temp2-drop-nav" class="L9-temp-drop-down-nav" ng-class="{'L9-base-temp-drop': ccTempDropAnim}">
     <ul>
         <li class="L9-link"><a href="#!/service-puddle1">service-puddle1</a></li>
@@ -94,6 +97,20 @@
         <li class="L9-link"><a href="#!/careers">careers</a></li>
     </ul>
 </div>
+
+<script type="text/javascript">
+    function LabMainNavFunction(){
+        console.log("jha - LabMainNavFunction should have been called.");
+        var labMainNav = document.getElementById("L9-main-nav");
+        if(labMainNav.className === "topnav") {
+            console.log("jha - well it should get responsive added");
+            labMainNav.className += " responsive";
+        } else {
+            labMainNav.className = "topnav";
+        }
+    }
+</script>
+
 
 <!-- application entry point -->
 <ui-view autoscroll="true"></ui-view>
