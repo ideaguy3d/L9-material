@@ -17,7 +17,14 @@ angular.module('L9-app', [
                     templateUrl: 'states/lab916/view.lab916.html',
                     controller: 'Lab916Ctrl',
                     controllerAs: 'lab',
-                    resolve: {}
+                    resolve: {
+                        homeSubFooterState: function () {
+                            return {
+                                curState: 'landing',
+                                mode: true
+                            };
+                        }
+                    }
                 })
                 .state('contact', {
                     url: '/contact',

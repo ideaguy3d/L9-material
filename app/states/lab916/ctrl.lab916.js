@@ -5,9 +5,13 @@
 (function () {
     "use strict";
 
-    angular.module('L9-app').controller('Lab916Ctrl', [
-        function () {
+    angular.module('L9-app').controller('Lab916Ctrl', ["$rootScope", "homeSubFooterState",
+        function ($rootScope, homeSubFooterState) {
             const vm = this;
+            console.log("jha - Lab916Ctrl invoked ^_^");
+
+            $rootScope.ccShowHomeSubFooter = homeSubFooterState.mode;
+
             vm.slogan = "We help amazon sellers get more sales.";
             vm.slogan2 = "AMAZON OPTIMIZATION SPECIALISTS";
 
