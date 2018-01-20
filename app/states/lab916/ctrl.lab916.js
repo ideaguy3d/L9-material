@@ -5,8 +5,8 @@
 (function () {
     "use strict";
 
-    angular.module('L9-app').controller('Lab916Ctrl', ["$rootScope", "homeSubFooterState",
-        function ($rootScope, homeSubFooterState) {
+    angular.module('L9-app').controller('Lab916Ctrl', ["$rootScope", "homeSubFooterState", "smoothScroll",
+        function ($rootScope, homeSubFooterState, smoothScroll) {
             const vm = this;
             console.log("jha - Lab916Ctrl invoked ^_^");
 

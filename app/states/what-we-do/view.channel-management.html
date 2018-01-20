@@ -3,14 +3,16 @@
          class="L9-content-opt-hero">
     <div flex="33" class="L9-text-center">
         <h1>Channel Management</h1>
-        <p><a href="#L9-co-r2"><ng-md-icon icon="arrow_downward"></ng-md-icon></a></p>
+        <md-button class="md-fab md-primary md-hue-2" ng-click="whatWedoCtrl.l9HeroDown()" aria-label="Favorite">
+            <ng-md-icon icon="keyboard_arrow_down"></ng-md-icon>
+        </md-button>
     </div>
 </section>
 
 <br>
 
 <!-- Row : sbs - img.left, text.right  -->
-<section layout="row" layout-sm="column" layout-xs="column" layout-align="center center" layout-padding
+<section id="L9-what-we-do-goto" layout="row" layout-sm="column" layout-xs="column" layout-align="center center" layout-padding
          class="L9-content-opt-row4">
     <!-- Left side -->
     <div flex="50" class="lhs-img"></div>

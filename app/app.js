@@ -50,7 +50,7 @@ angular.module('L9-app', [
                     url: '/what-we-do/content-optimization',
                     templateUrl: 'states/what-we-do/view.content-opt.html',
                     controller: 'WhatWeDoCtrl',
-                    controllerAs: 'wedo',
+                    controllerAs: 'whatWedoCtrl',
                     resolve: {
                         homeSubFooterState: function () {
                             return {
@@ -64,7 +64,7 @@ angular.module('L9-app', [
                     url: '/what-we-do/advertising',
                     templateUrl: 'states/what-we-do/view.promote.html',
                     controller: 'WhatWeDoCtrl',
-                    controllerAs: 'wedo',
+                    controllerAs: 'whatWedoCtrl',
                     resolve: {
                         homeSubFooterState: function () {
                             return {
@@ -78,7 +78,7 @@ angular.module('L9-app', [
                     url: '/what-we-do/channel-management',
                     templateUrl: 'states/what-we-do/view.channel-management.html',
                     controller: 'WhatWeDoCtrl',
-                    controllerAs: 'wedo',
+                    controllerAs: 'whatWedoCtrl',
                     resolve: {
                         homeSubFooterState: function () {
                             return {

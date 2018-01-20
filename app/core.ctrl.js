@@ -18,7 +18,6 @@
             $scope.ccTempDropAnim = false;
 
             $scope.ccToggleTempDrop = function () {
-                console.log("jha - $scope.ccToggleTempDrop invoked :)");
                 $scope.ccTempDrop = !$scope.ccTempDrop;
                 $scope.ccTempDropAnim = !$scope.ccTempDropAnim;
             };
