@@ -1,60 +1,55 @@
 <!-- Hero Landing -->
-<section layout="row" layout-xs="column" layout-padding layout-align="center center"
+<section layout="row" layout-xs="column" layout-sm="column" layout-padding layout-align="center center"
          class="L9-hero-landing">
     <div flex-md="80" class="L9-text-left L9-pos-rel L9-hero-landing-inner">
-        <img src="http://lab916.wpengine.com/mock2/images/L9-hero.png" alt="img" class="L9-hero-img"
-             width="490px">
         <div class="L9-lwrap">
             <h1 class="L9-hero-h1">Easily optimize Amazon sales processes</h1>
             <p class="L9-para">{{lab.heroPara}}</p>
         </div>
+
+        <img src="http://lab916.wpengine.com/mock2/images/L9-hero.png" alt="img" class="L9-hero-img"
+             width="490px">
+
         <br><br>
+
         <button class="L9-btn">GET YOUR FREE ACCOUNT</button>
     </div>
 </section>
 
-<!-- TODO: convert this to a dir or com IMMEDIATELY !! -->
-<!-- Hero Quote
-<section layout="row" layout-xs="column" layout-align="center center" class="L9-text-center">
-    <div flex="60">
-        <h2>"{{lab.heroQuote}}"</h2>
-        <p class="L9-figcaption">-Jennifer Kim, Co-Founder @ Seigla Athletica</p>
-    </div>
-</section>
--->
-<br><br><br><br><br>
+<br><br>
 
-<!-- Channel Management -->
+<!-- The 3 main services -->
 <section layout="column" layout-padding>
     <div layout="row" layout-align="center center">
-        <div flex="60" class="L9-text-center">
+        <div flex flex-gt-sm="60" class="L9-text-center">
             <!--<h2 class="L9-h2 center">... What we do again?</h2>-->
             <div class="L9-what-we-do-title">{{lab.whatWeDo}}</div>
         </div>
     </div>
 
+    <!-- The 3 images beneath the services paragraph -->
     <div layout="row" layout-xs="column" layout-align="center center">
         <!-- Left -->
-        <div flex="25" class="L9-text-center" layout-padding layout-margin>
+        <div flex flex-gt-sm="25" class="L9-text-center" layout-padding layout-margin>
             <img ng-src="{{lab.iconCc}}" alt="img" width="95%">
             <div class="L9-para">Content Optimization</div>
         </div>
 
         <!-- Middle -->
-        <div flex="25" class="L9-text-center" layout-padding layout-margin>
+        <div flex flex-gt-sm="25"  class="L9-text-center" layout-padding layout-margin>
             <img ng-src="{{lab.iconAd}}" alt="img" width="95%">
             <div class="L9-para">Advertising</div>
         </div>
 
         <!-- Right -->
-        <div flex="25" class="L9-text-center" layout-padding layout-margin>
+        <div flex flex-gt-sm="25" class="L9-text-center" layout-padding layout-margin>
             <img ng-src="{{lab.iconCm}}" alt="img" width="95%">
             <div class="L9-para">Channel Management</div>
         </div>
     </div>
 </section>
 
-<br><br><br><br><br>
+<br><br>
 
 <!-- Channel Management -->
 <section layout="column" layout-align="center center" layout-padding>
@@ -73,12 +68,12 @@
 </section>
 
 <!-- SIDE BY SIDE LAYOUT BEGINS: -->
-<br><br><br><br><br>
+<br><br>
 
 <!-- withPros - side by side layout -->
-<section layout="row" layout-sm="column" layout-align="center center" class="L9-h100">
+<section layout="column" layout-gt-sm="row" layout-align="center center" class="L9-h100">
     <!-- Left Side - img -->
-    <div flex="40" layout-padding>
+    <div flex flex-gt-sm="40" layout-padding-gt-sm>
         <!-- For pos: abs;-->
         <div class="L9-left-sbs-img">
             <img src="images/ebc-left.png" alt="img" class="L9-shadow1">
@@ -86,7 +81,7 @@
     </div>
 
     <!-- Right side - text -->
-    <div flex="40" layout-padding class="L9-text-left">
+    <div flex flex-gt-sm="40" layout-padding-gt-sm class="L9-text-left">
         <!--<img src="http://via.placeholder.com/250x150" alt="img">-->
         <h2 class="L9-h2-sbs">{{lab.withPros}}</h2>
         <p class="L9-p-sbs">{{lab.contentOptPara}}</p>
@@ -96,10 +91,10 @@
     </div>
 </section>
 
-<br><br><br><br><br>
+<br><br>
 
 <!-- moMoney - side by side layout -->
-<section layout="row" layout-sm="column" layout-align="center center" class="L9-h100">
+<section layout="column" layout-gt-sm="row" layout-align="center center" class="L9-h100">
     <!-- Left side - text -->
     <div flex="40" layout-padding class="L9-text-left">
         <!--<img ng-src="http://via.placeholder.com/250x150" alt="img">-->
@@ -118,18 +113,14 @@
     </div>
 </section>
 
-<br><br><br><br><br>
-
-<!--<clients-worked-with></clients-worked-with>-->
-
-<!--<fba-section></fba-section>-->
+<br><br>
 
 <!-- klein quote -->
-<section layout="row" layout-sm="column" layout-align="center center" layout-padding class="L9-text-center">
-    <div flex="60">
+<section layout="row" layout-align="center center" layout-padding class="L9-text-center">
+    <div flex flex-gt-sm="60">
         <div class="L9-what-we-do-title">{{lab.kleinQuote}}</div>
         <p class="L9-figcaption">— Nore Klein, Co-Founder @ M3 Group</p>
     </div>
 </section>
 
-<br><br><br><br><br>
+<br><br>

@@ -51,10 +51,10 @@
         <small>AMAZON OPTIMIZATION SPECIALISTS</small>
     </a>
 
-    <a ng-click="ccToggleTempDrop()" class="L9-whyL9-dropdown L9-nav-link">
+    <a ng-click="ccToggleTempDrop()" class="L9-whyL9-dropdown L9-nav-link L9-nav-link-why-us">
         WHY LAB916 <strong><ng-md-icon icon="keyboard_arrow_down"></ng-md-icon></strong>
     </a>
-    <a ui-sref="contact" class="L9-nav-link">GET A QUOTE</a>
+    <a ui-sref="contact" class="L9-nav-link get-a-quote">GET A QUOTE</a>
     <a ui-sref="case-studies" class="L9-nav-link">CASE STUDIES</a>
     <a ui-sref="what-we-do" class="L9-nav-link">SERVICES</a>
     <div id="L9-search-bar" >
@@ -82,6 +82,7 @@
             </form>
         </md-content>
     </div>
+
     <a href="javascript:void(0);" onclick="LabMainNavFunction()"
        class="L9-icon"><ng-md-icon icon="reorder"></ng-md-icon></a>
 </div>
@@ -103,7 +104,6 @@
         console.log("jha - LabMainNavFunction should have been called.");
         var labMainNav = document.getElementById("L9-main-nav");
         if(labMainNav.className === "topnav") {
-            console.log("jha - well it should get responsive added");
             labMainNav.className += " responsive";
         } else {
             labMainNav.className = "topnav";

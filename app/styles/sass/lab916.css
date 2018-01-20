@@ -133,6 +133,9 @@ section.L9-service-puddle-x1 .mr {
 
 .L9-h100 {
   height: 100%; }
+  @media screen and (max-width: 600px) {
+    .L9-h100 {
+      height: inherit; } }
 
 .L9-pad8 {
   padding: 12px; }
@@ -210,6 +213,12 @@ div.L9-left-sbs-img {
     top: -320px;
     left: -410px;
     max-width: 800px; }
+  @media screen and (max-width: 600px) {
+    div.L9-left-sbs-img img {
+      position: static;
+      width: 100%;
+      top: 0;
+      left: 0; } }
   @media screen and (min-width: 1060px) {
     div.L9-left-sbs-img img {
       left: -350px; } }
@@ -244,6 +253,12 @@ div.L9-right-sbs-img {
     right: -440px;
     max-width: 800px;
     box-shadow: -5px 10px 18px rgba(201, 197, 224, 0.7); }
+  @media screen and (max-width: 600px) {
+    div.L9-right-sbs-img img {
+      position: static;
+      width: 100%;
+      top: 0;
+      left: 0; } }
   @media screen and (min-width: 1060px) {
     div.L9-right-sbs-img img {
       right: -380px; } }
@@ -371,6 +386,21 @@ section.L9-clients-row {
 
 .L9-hero-landing .L9-pos-rel {
   position: relative; }
+
+@media screen and (max-width: 600px) {
+  .L9-hero-landing .L9-hero-img {
+    position: static;
+    width: 100%; }
+  .L9-hero-landing h1.L9-hero-h1 {
+    margin-top: 0;
+    font-size: 30px; }
+  .L9-hero-landing p {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300; }
+  .L9-hero-landing .L9-lwrap {
+    text-align: center;
+    width: 100%; } }
 
 .L9-figcaption {
   color: #aaaaaa;
@@ -505,14 +535,17 @@ l9-resource-card .L9-resource-card-container {
 @media screen and (max-width: 936px) {
   #L9-search-bar {
     display: none; }
-  #L9-main-nav.topnav > a.L9-nav-link {
-    display: none; }
-  #L9-main-nav.topnav .L9-icon {
-    display: block;
-    float: right;
-    z-index: 999; }
+  #L9-main-nav.topnav {
+    padding: 8px; }
+    #L9-main-nav.topnav > a.L9-nav-link {
+      display: none; }
+    #L9-main-nav.topnav .L9-icon {
+      display: block;
+      float: right;
+      z-index: 999; }
   #L9-main-nav.topnav.responsive {
-    position: relative; }
+    position: relative;
+    transition: all 200ms linear; }
     #L9-main-nav.topnav.responsive .L9-icon {
       position: absolute;
       top: 0;
@@ -525,5 +558,9 @@ l9-resource-card .L9-resource-card-container {
       #L9-main-nav.topnav.responsive a.L9-nav-link:hover {
         background-color: #fbed80;
         transition: all 200ms linear; }
+      #L9-main-nav.topnav.responsive a.L9-nav-link.get-a-quote {
+        margin-top: 84px; }
+    #L9-main-nav.topnav.responsive a.L9-nav-link.L9-nav-link-why-us {
+      display: none; }
   #L9-temp2-drop-nav {
     display: none; } }
