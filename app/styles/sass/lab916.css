@@ -21,6 +21,11 @@ h1.L9-hero-h1 {
   font-size: 54px;
   margin-bottom: 0; }
 
+@media screen and (max-width: 600px) {
+  h1.L9-hero-h1 {
+    margin-top: 0;
+    font-size: 30px; } }
+
 /********************************
     -- L9 initial ui code --
 **********************************/
@@ -130,6 +135,12 @@ section.L9-service-puddle-x1 .mr {
   font-size: 24px;
   color: #52565f;
   line-height: 36px; }
+
+@media screen and (max-width: 600px) {
+  .L9-what-we-do-title {
+    text-align: center; }
+  .L9-flex-text-col {
+    text-align: center; } }
 
 .L9-h100 {
   height: 100%; }
@@ -258,7 +269,7 @@ div.L9-right-sbs-img {
       position: static;
       width: 100%;
       top: 0;
-      left: 0; } }
+      right: 0; } }
   @media screen and (min-width: 1060px) {
     div.L9-right-sbs-img img {
       right: -380px; } }
@@ -451,7 +462,8 @@ l9-resource-card .L9-resource-card-container {
   padding: 28px; }
   .L9-sub-footer-container .L9-sub-footer-col {
     border: solid rgba(140, 155, 170, 0.5) 1px;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-top: 12px; }
 
 .L9-footer-container {
   background: #424242;
