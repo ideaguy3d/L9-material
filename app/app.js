@@ -12,6 +12,7 @@ angular.module('L9-app', [
     .config(['$stateProvider', '$urlRouterProvider',
         function ($stateProvider, $urlRouterProvider) {
             $stateProvider
+                //-- Lab916 controlled state:
                 .state('landing', {
                     url: '/',
                     templateUrl: 'states/lab916/view.lab916.html',
@@ -32,11 +33,13 @@ angular.module('L9-app', [
                     controller: 'uiPracCtrl',
                     controllerAs: 'ui'
                 })
+
+                //-- WhatWeDoCtrl controlled states:
                 .state('what-we-do', {
                     url: '/what-we-do',
                     templateUrl: 'states/what-we-do/view.what-we-do.html',
                     controller: 'WhatWeDoCtrl',
-                    controllerAs: 'wedo',
+                    controllerAs: 'whatWedoCtrl',
                     resolve: {
                         homeSubFooterState: function () {
                             return {
@@ -102,6 +105,8 @@ angular.module('L9-app', [
                         }
                     }
                 })
+
+                //-- PagesCtrl controlled states:
                 .state('service-puddle1', {
                     url: "/service-puddle1",
                     templateUrl: "states/pages/view.service-puddle1.html",

@@ -13,7 +13,6 @@
             $rootScope.ccShowHomeSubFooter = true;
 
             $scope.ccCurrentUser = "";
-            $scope.coreEdhubState = false;
             $scope.ccTempDrop = false;
             $scope.ccTempDropAnim = false;
 
@@ -32,8 +31,12 @@
                 smoothScroll(elem);
             };
 
+            var c = 0;
+            $scope.ccCloseSubNav = function () {
+                console.log("sub nav link was clicked = " + ++c);
+            };
+
             function checkUrl() {
-                console.log("jha - checkUrl() invoked... \n");
                 if ($location.url()) {
                     $rootScope.ccShowHomeSubFooter = true;
                 }
