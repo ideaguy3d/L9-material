@@ -3,9 +3,9 @@
          class="L9-content-opt-hero">
     <div flex="33" class="L9-text-center">
         <h1>Why Lab916?</h1>
-        <p><a href="#L9-co-r2">
-            <ng-md-icon icon="arrow_downward"></ng-md-icon>
-        </a></p>
+        <md-button class="md-fab md-primary md-hue-2" ng-click="pagesCtrl.l9HeroDown()" aria-label="Down Button">
+            <ng-md-icon icon="keyboard_arrow_down"></ng-md-icon>
+        </md-button>
     </div>
 </section>
 
@@ -20,115 +20,105 @@
 
 <br>
 
-<!-- Row: sbs - img.left, text.right  -->
-<section layout="row" layout-sm="column" layout-xs="column" layout-align="center end"
-         class="L9-content-opt-row4">
+<!-- Row "Team of Experts": sbs - img.left, text.right  -->
+<section id="L9-row-goto" layout="row" layout-sm="column" layout-xs="column" layout-align="center end"
+         class="L9-team-of-experts">
     <!-- Left side -->
     <div flex="40" class="img-v2"></div>
 
-    <!-- Right side -->
+    <!-- Right side - txt -->
     <div flex="50" class="L9-text-left rhs-txt">
         <h2 class="L9-why-us-nbr">01</h2>
-        <h1 class="center">We are Lab916. We get you more Amazon sales.</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, dolor doloremque ex expedita, ipsum iusto
-            nisi officia quam repellat tenetur unde velit vitae. Ad aliquid architecto at facilis tempora. Tempora.
-        </p>
+        <h1 class="center L9-hero-h1">{{pagesCtrl.whyL9.teamOfExperts.h1}}</h1>
+        <p class="L9-para">{{pagesCtrl.whyL9.teamOfExperts.para}}</p>
 
-        <div class="L9-btm-img">
-            <img src="http://via.placeholder.com/500x100" alt="img">
+        <div class="L9-btm-img L9-text-center" ng-click="pagesCtrl.gotoContactUs()">
+            <!--<img src="http://via.placeholder.com/500x100" alt="img">-->
+            <h1>LEARN MORE</h1>
         </div>
     </div>
 </section>
 
 <br>
 
-<!-- Row: sbs - txt.right, img.left  -->
+<!-- Row "Experienced Professionals": sbs - txt.right, img.left  -->
 <section layout="row" layout-sm="column" layout-xs="column" layout-align="center end"
-         class="L9-content-opt-row4">
-    <!-- Left side -->
+         class="L9-why-lab916-row">
+    <!-- Left side | txt -->
     <div flex="50" class="L9-text-left lhs-txt">
         <h2 class="L9-why-us-nbr">02</h2>
-        <h1 class="center">We are Lab916. We get you more Amazon sales.</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, dolor doloremque ex expedita, ipsum iusto
-            nisi officia quam repellat tenetur unde velit vitae. Ad aliquid architecto at facilis tempora. Tempora.
-        </p>
+        <h1 class="center L9-hero-h1">{{pagesCtrl.whyL9.experPros.h1}}</h1>
+        <p class="L9-para">{{pagesCtrl.whyL9.experPros.para}}</p>
 
-        <div class="L9-btm-img">
-            <img src="http://via.placeholder.com/500x100" alt="img">
+        <div class="L9-btm-img L9-text-center" ng-click="pagesCtrl.gotoContactUs()">
+            <!--<img src="http://via.placeholder.com/500x100" alt="img">-->
+            <h1>LEARN MORE</h1>
         </div>
     </div>
 
-    <!-- Right side -->
-    <div flex="40" class="img-v2"></div>
+    <!-- Right side | img -->
+    <div flex="40" class="img img-exper-pros"></div>
 </section>
 
 <br>
 
-<!-- Row: sbs - img.left, text.right  -->
+<!-- Row "Diverse Clients": sbs - img.left, text.right  -->
 <section layout="row" layout-sm="column" layout-xs="column" layout-align="center end"
-         class="L9-content-opt-row4">
+         class="L9-why-lab916-row">
     <!-- Left side -->
-    <div flex="40" class="img-v2"></div>
+    <div flex="40" class="img img-diverse-clients"></div>
 
     <!-- Right side -->
     <div flex="50" class="L9-text-left rhs-txt">
         <h2 class="L9-why-us-nbr">03</h2>
-        <h1 class="center">We are Lab916. We get you more Amazon sales.</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, dolor doloremque ex expedita, ipsum iusto
-            nisi officia quam repellat tenetur unde velit vitae. Ad aliquid architecto at facilis tempora. Tempora.
+        <h1 class="center L9-hero-h1">{{pagesCtrl.whyL9.diverseClients.h1}}</h1>
+        <p class="L9-para">
+           {{pagesCtrl.whyL9.diverseClients.para}}
         </p>
 
-        <div class="L9-btm-img">
-            <img src="http://via.placeholder.com/500x100" alt="img">
+        <div class="L9-btm-img L9-text-center" ng-click="pagesCtrl.gotoContactUs()">
+            <!--<img src="http://via.placeholder.com/500x100" alt="img">-->
+            <h1>LEARN MORE</h1>
         </div>
     </div>
 </section>
 
 <br>
 
-<!-- Row: sbs - txt.right, img.left  -->
+<!-- Row "Big Business Results": sbs - txt.right, img.left  -->
 <section layout="row" layout-sm="column" layout-xs="column" layout-align="center end"
-         class="L9-content-opt-row4">
+         class="L9-why-lab916-row">
     <!-- Left side -->
     <div flex="50" class="L9-text-left lhs-txt">
         <h2 class="L9-why-us-nbr">04</h2>
-        <h1 class="center">We are Lab916. We get you more Amazon sales.</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, dolor doloremque ex expedita, ipsum iusto
-            nisi officia quam repellat tenetur unde velit vitae. Ad aliquid architecto at facilis tempora. Tempora.
-        </p>
+        <h1 class="center L9-hero-h1">{{pagesCtrl.whyL9.diverseClients.h1}}</h1>
+        <p class="L9-para">{{pagesCtrl.whyL9.diverseClients.para}}</p>
 
-        <div class="L9-btm-img">
-            <img src="http://via.placeholder.com/500x100" alt="img">
+        <div class="L9-btm-img L9-text-center" ng-click="pagesCtrl.gotoContactUs()">
+            <h1>LEARN MORE</h1>
         </div>
     </div>
 
     <!-- Right side -->
-    <div flex="40" class="img-v2"></div>
+    <div flex="40" class="img img-big-biz-res"></div>
 </section>
 
 <br>
 
-<!-- Row: sbs - img.left, text.right  -->
+<!-- Row "Data Driven Decisions": sbs - img.left, text.right  -->
 <section layout="row" layout-sm="column" layout-xs="column" layout-align="center end"
-         class="L9-content-opt-row4">
+         class="L9-why-lab916-row">
     <!-- Left side -->
-    <div flex="40" class="img-v2"></div>
+    <div flex="40" class="img img-data-driven"></div>
 
     <!-- Right side -->
     <div flex="50" class="L9-text-left rhs-txt">
         <h2 class="L9-why-us-nbr">05</h2>
-        <h1 class="center">We are Lab916. We get you more Amazon sales.</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, dolor doloremque ex expedita, ipsum iusto
-            nisi officia quam repellat tenetur unde velit vitae. Ad aliquid architecto at facilis tempora. Tempora.
-        </p>
+        <h1 class="center L9-hero-h1">{{pagesCtrl.whyL9.dataDriven.h1}}</h1>
+        <p class="L9-para">{{pagesCtrl.whyL9.dataDriven.para}}</p>
 
-        <div class="L9-btm-img">
-            <img src="http://via.placeholder.com/500x100" alt="img">
+        <div class="L9-btm-img L9-text-center" ng-click="pagesCtrl.gotoContactUs()">
+            <h1>LEARN MORE</h1>
         </div>
     </div>
 </section>
@@ -137,8 +127,12 @@
 
 <!-- Row: 2 btn's row -->
 <section layout="row" layout-align="center center">
-    <div flex="10"><button class="L9-btn">TRY US OUT</button></div>
-    <div flex="20"><button class="L9-btn">GET A FREE QUOTE</button></div>
+    <div flex="10">
+        <button class="L9-btn">TRY US OUT</button>
+    </div>
+    <div flex="20">
+        <button class="L9-btn">GET A FREE QUOTE</button>
+    </div>
 </section>
 
 <br>

@@ -506,6 +506,112 @@ div.L9-para, p.L9-para {
 	}
 }
 
+/* hi ^_^/ */
+.L9-team-of-experts {
+	margin-top: 100px;
+	
+	div.lhs-img {
+		background: url(http://via.placeholder.com/500x900) no-repeat center/cover;
+		height: 100vh;
+	}
+	
+	div.img-v2 {
+		background: url(http://lab916.wpengine.com/img/services/team-of-experts.png) no-repeat center/cover;
+		height: 600px;
+	}
+	
+	div.rhs-txt {
+		padding-left: 42px;
+	}
+	
+	div.lhs-txt {
+		padding-right: 42px;
+	}
+	
+	div.L9-btm-img {
+		margin-top: 70px;
+		background-color: $L9-clr-ltgrey;
+		cursor: pointer;
+		padding: 12px;
+		transition: all 200ms ease-in;
+		
+		
+		h1, h2, h3 {
+			color: whitesmoke;
+		}
+	}
+	
+	div.L9-btm-img:hover {
+		background-color: $L9-clr-ylight;
+		
+		h1, h2, h3 {
+			color: $L9-clr-dkgrey;
+		}
+	}
+}
+
+.L9-why-lab916-row {
+	margin-top: 70px;
+	
+	div.lhs-img {
+		background: url(http://via.placeholder.com/500x900) no-repeat center/cover;
+		height: 100vh;
+	}
+	
+	.center {
+		text-transform: uppercase;
+	}
+	
+	.img {
+		height: 600px;
+	}
+	
+	.img-exper-pros {
+		background: url(http://lab916.wpengine.com/img/services/one-stop-shop.png) no-repeat center/cover;
+	}
+	
+	.img-diverse-clients {
+		background: url(http://lab916.wpengine.com/img/services/diverse-clients.png) no-repeat center/cover;
+	}
+	
+	.img-big-biz-res {
+		background: url(http://lab916.wpengine.com/img/services/big-biz-res.png) no-repeat center/cover;
+	}
+	
+	.img-data-driven {
+		background: url(http://lab916.wpengine.com/img/services/data-driven.png) no-repeat center/cover;
+	}
+	
+	div.rhs-txt {
+		padding-left: 42px;
+	}
+	
+	div.lhs-txt {
+		padding-right: 42px;
+	}
+	
+	div.L9-btm-img {
+		margin-top: 70px;
+		background-color: $L9-clr-ltgrey;
+		cursor: pointer;
+		padding: 12px;
+		transition: all 200ms ease-in;
+		
+		
+		h1, h2, h3 {
+			color: whitesmoke;
+		}
+	}
+	
+	div.L9-btm-img:hover {
+		background-color: $L9-clr-ylight;
+		
+		h1, h2, h3 {
+			color: $L9-clr-dkgrey;
+		}
+	}
+}
+
 .L9-whyL9-dropdown {
 	cursor: pointer;
 }

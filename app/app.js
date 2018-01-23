@@ -126,9 +126,11 @@ angular.module('L9-app', [
                     controller: "PagesCtrl",
                     controllerAs: "pagesCtrl"
                 })
-                .state('why-us', {
-                    url: "/why-us",
-                    templateUrl: "states/pages/view.why-us.html"
+                .state('why-lab916', {
+                    url: "/why-lab916",
+                    templateUrl: "states/pages/view.why-us.html",
+                    controller: "PagesCtrl",
+                    controllerAs: "pagesCtrl"
                 })
                 .state('blog', {
                     url: "/blog",
