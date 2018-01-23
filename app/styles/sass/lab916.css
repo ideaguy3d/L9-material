@@ -142,6 +142,9 @@ section.L9-service-puddle-x1 .mr {
   .L9-flex-text-col {
     text-align: center; } }
 
+.L9-copy-write-img {
+  width: 600px; }
+
 .L9-h100 {
   height: 100%; }
   @media screen and (max-width: 600px) {
@@ -155,6 +158,9 @@ h2.L9-h2 {
   font-weight: 300;
   font-size: 46px;
   color: #eccf2f; }
+
+.L9-mar-img {
+  margin: 12px 0; }
 
 .L9-op5 {
   opacity: 0.4; }
