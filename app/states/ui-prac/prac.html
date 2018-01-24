@@ -1,5 +1,6 @@
 <div ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak>
     <section layout="row" flex>
+        <!-- left sidenav -->
         <md-sidenav class="md-sidenav-left" md-component-id="left"
                 md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
             <md-toolbar class="md-theme-indigo">
@@ -41,6 +42,7 @@
             <div flex></div>
         </md-content>
 
+        <!-- right sidenav -->
         <md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="right">
             <md-toolbar class="md-theme-light">
                 <h1 class="md-toolbar-tools">Sidenav Right</h1>
@@ -57,9 +59,7 @@
                     Close Sidenav Right
                 </md-button>
             </md-content>
-
         </md-sidenav>
-
     </section>
 
 </div>

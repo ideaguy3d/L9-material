@@ -138,19 +138,38 @@ section.L9-service-puddle-x1 .mr {
 
 #L9-services-main-sidenav {
   position: fixed;
-  top: 300px;
-  width: 150px; }
-  #L9-services-main-sidenav md-sidenav md-content {
-    background-color: #fbed80; }
-    #L9-services-main-sidenav md-sidenav md-content .lab-link {
-      padding: 4px 8px 4px 20px;
-      cursor: pointer;
-      transition: all 200ms ease-out; }
-    #L9-services-main-sidenav md-sidenav md-content .lab-link:hover {
-      background-color: #c4bd14; }
-    #L9-services-main-sidenav md-sidenav md-content .lab-link.L9-text-right:hover {
-      background-color: #b4241a;
-      color: #fbed80; }
+  top: 200px;
+  width: 150px;
+  height: 330px; }
+  #L9-services-main-sidenav .L9-service-toggle {
+    background-color: rgba(251, 237, 128, 0.5); }
+  #L9-services-main-sidenav md-sidenav {
+    background-color: rgba(255, 255, 255, 0); }
+    #L9-services-main-sidenav md-sidenav md-content {
+      background-color: rgba(0, 0, 0, 0.3);
+      color: #ffffff;
+      font-weight: 300; }
+      #L9-services-main-sidenav md-sidenav md-content .sub-nav {
+        cursor: pointer;
+        padding: 4px;
+        width: 60px; }
+      #L9-services-main-sidenav md-sidenav md-content .sub-nav:focus {
+        outline: none; }
+      #L9-services-main-sidenav md-sidenav md-content .sub-nav:hover {
+        background-color: #c4bd14; }
+      #L9-services-main-sidenav md-sidenav md-content .lab-link {
+        padding: 4px 8px 4px 20px;
+        cursor: pointer;
+        transition: all 200ms ease-out; }
+      #L9-services-main-sidenav md-sidenav md-content .lab-link:focus {
+        outline: none; }
+      #L9-services-main-sidenav md-sidenav md-content .lab-link.L9-text-right {
+        width: 120px; }
+      #L9-services-main-sidenav md-sidenav md-content .lab-link:hover {
+        background-color: #c4bd14; }
+      #L9-services-main-sidenav md-sidenav md-content .lab-link.L9-text-right:hover {
+        background-color: #b4241a;
+        color: #fbed80; }
 
 @media screen and (max-width: 600px) {
   .L9-what-we-do-title {

@@ -195,18 +195,49 @@ section.L9-service-puddle-x1 {
 
 #L9-services-main-sidenav {
 	position: fixed;
-	top: 300px;
+	top: 200px;
 	width: 150px;
+	height: 330px;
+	
+	.L9-service-toggle {
+		background-color: rgba(251, 237, 128, 0.5);
+	}
 	
 	md-sidenav {
+		background-color: rgba(255, 255, 255, 0);
+		
 		md-content {
-			background-color: $L9-clr-ylight;
+			background-color: rgba(0, 0, 0, 0.3);
+			color: #ffffff;
+			font-weight: 300;
+			
+			.sub-nav {
+				cursor: pointer;
+				padding: 4px;
+				width: 60px;
+			}
+			
+			.sub-nav:focus {
+				outline: none;
+			}
+			
+			.sub-nav:hover {
+				background-color: $L9-clr-ydrk;
+			}
 			
 			.lab-link {
-				 padding: 4px 8px 4px 20px;
-				 cursor: pointer;
-				 transition: all 200ms ease-out;
-			 }
+				padding: 4px 8px 4px 20px;
+				cursor: pointer;
+				transition: all 200ms ease-out;
+			}
+			
+			.lab-link:focus {
+				outline: none;
+			}
+			
+			.lab-link.L9-text-right {
+				width: 120px;
+			}
 			
 			.lab-link:hover {
 				background-color: $L9-clr-ydrk;
@@ -571,7 +602,6 @@ div.L9-para, p.L9-para {
 		padding: 12px;
 		transition: all 200ms ease-in;
 		
-		
 		h1, h2, h3 {
 			color: whitesmoke;
 		}
@@ -632,7 +662,6 @@ div.L9-para, p.L9-para {
 		cursor: pointer;
 		padding: 12px;
 		transition: all 200ms ease-in;
-		
 		
 		h1, h2, h3 {
 			color: whitesmoke;

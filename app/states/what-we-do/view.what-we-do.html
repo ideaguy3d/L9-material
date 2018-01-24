@@ -68,7 +68,7 @@
          class="L9-service-sbs">
     <!-- Left side | txt -->
     <div flex flex-gt-xs="45">
-        <h2 class="L9-h2 L9-text-center">Copy Writing</h2>
+        <h2 id="L9-services-copy-writing" class="L9-h2 L9-text-center">Copy Writing</h2>
 
         <p class="L9-para L9-text-right"><strong>KEYWORD RESEARCH</strong></p>
         <p class="L9-para L9-text-right">
@@ -154,7 +154,7 @@
 
     <!-- Right side | txt -->
     <div flex flex-gt-xs="45">
-        <h2 class="L9-h2 L9-text-center">Images</h2>
+        <h2 id="L9-services-images" class="L9-h2 L9-text-center">Images</h2>
         <p class="L9-para"><strong>PRODUCT PHOTOGRAPHY</strong></p>
         <p class="L9-para">
             With a full photography studio and professional photographer on-site, we produce high-quality photos that
@@ -180,6 +180,8 @@
 
     <!-- Right side | txt -->
     <div flex flex-gt-xs="45">
+        <h2 id="L9-services-enhanced" class="L9-h2 L9-text-center">Enhanced Content</h2>
+
         <p class="L9-para">
             <strong>
                 A+ CONTENT
@@ -450,24 +452,30 @@
 <section id="L9-services-main-sidenav" layout="row" class="L9-services-side-nav">
 
     <!-- side nav toggle button -->
-    <md-button ng-click="toggleRight()"
-               ng-hide="isOpenRight()"
-               class="md-primary">
-        <ng-md-icon icon="more_vert"></ng-md-icon>
+    <md-button ng-click="whatWedoCtrl.toggleSidenav()"
+               ng-hide="whatWedoCtrl.isSidenavOpen()"
+               class="md-primary L9-service-toggle">
+        <!--<ng-md-icon icon="more_vert"></ng-md-icon>-->
+        <ng-md-icon icon="chevron_right" size="44"></ng-md-icon>
     </md-button>
 
     <!-- actual side navigation -->
-    <md-sidenav md-is-locked-open="$mdMedia('gt-sm')"
-                class="md-sidenav-left md-whiteframe-2dp"
+    <md-sidenav class="md-whiteframe-4dp"
                 md-component-id="L9md-services-sidenav-left">
         <md-content class="L9-service-sidenav-links">
             <p class="lab-link L9-text-right" ng-click="whatWedoCtrl.closeServiceSidenav()">
-                <ng-md-icon icon="close"></ng-md-icon>
+                <span>Lab916</span> <ng-md-icon icon="close" style="padding-bottom: 4px;"></ng-md-icon>
             </p>
             <p class="lab-link" ng-click="whatWedoCtrl.serviceSidenav('L9-services-setup')">Setup</p>
-            <p class="lab-link">
-                Content <ng-md-icon icon="arrow_drop_down"></ng-md-icon>
+            <p class="lab-link" ng-click="whatWedoCtrl.toggleShowContentSubMenu()">
+                Content
+                <ng-md-icon icon="arrow_drop_down"></ng-md-icon>
             </p>
+            <ul ng-show="whatWedoCtrl.showContentSubMenu">
+                <li class="sub-nav" ng-click="whatWedoCtrl.serviceSidenav('L9-services-copy-writing')"><small>Copy</small></li>
+                <li class="sub-nav" ng-click="whatWedoCtrl.serviceSidenav('L9-services-images')"><small>Images</small></li>
+                <li class="sub-nav" ng-click="whatWedoCtrl.serviceSidenav('L9-services-enhanced')"><small>Enhance</small></li>
+            </ul>
             <p class="lab-link" ng-click="whatWedoCtrl.serviceSidenav('L9-services-chan-man')">Management</p>
             <p class="lab-link" ng-click="whatWedoCtrl.serviceSidenav('L9-services-ad')">Advertising</p>
             <p class="lab-link" ng-click="whatWedoCtrl.serviceSidenav('L9-services-reviews')">Reviews</p>
