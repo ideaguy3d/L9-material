@@ -5,6 +5,7 @@ $L9-clr-ymed: #eccf2f;
 $L9-clr-ydrk: #c4bd14;
 $L9-clr-dkgrey: #52565f;
 $L9-clr-ltgrey: #8C9BAA;
+$L9-clr-red: #b4241a;
 
 $L9-height5: 500px;
 $L9-transparent: rgba(0, 0, 0, 0);
@@ -190,6 +191,33 @@ section.L9-service-puddle-x1 {
 	font-size: 24px;
 	color: $L9-clr-dkgrey;
 	line-height: 36px;
+}
+
+#L9-services-main-sidenav {
+	position: fixed;
+	top: 300px;
+	width: 150px;
+	
+	md-sidenav {
+		md-content {
+			background-color: $L9-clr-ylight;
+			
+			.lab-link {
+				 padding: 4px 8px 4px 20px;
+				 cursor: pointer;
+				 transition: all 200ms ease-out;
+			 }
+			
+			.lab-link:hover {
+				background-color: $L9-clr-ydrk;
+			}
+			
+			.lab-link.L9-text-right:hover {
+				background-color: $L9-clr-red;
+				color: $L9-clr-ylight;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 600px) {

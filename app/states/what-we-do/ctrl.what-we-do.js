@@ -1,7 +1,7 @@
 (function () {
     angular.module('L9-app').controller('WhatWeDoCtrl', ['$rootScope', 'homeSubFooterState',
-        "smoothScroll",
-        function ($rootScope, homeSubFooterState, smoothScroll) {
+        "smoothScroll", "$mdSidenav",
+        function ($rootScope, homeSubFooterState, smoothScroll, $mdSidenav) {
             var vm = this;
             vm.title = "(: What We Do! ^_^ :)";
 
@@ -12,12 +12,25 @@
             vm.jenKimQuote = "LAB916 isn’t your typical amateur Amazon marketing agency with zero experience. They actually increase traffic to your listing and more importantly, the vitalness of conversion. If you’re serious about growing your FBA business, give 10 minutes of your time to LAB916."
             vm.jenKimQuoteAuth = "- Jennifer Kim, Co-Founder @ Seigla Athletica";
 
-
             $rootScope.ccShowHomeSubFooter = homeSubFooterState.mode;
             vm.l9HeroDown = function () {
                 var elem = document.getElementById("L9-what-we-do-goto");
                 smoothScroll(elem);
             };
+
+            vm.serviceSidenav = function (name) {
+                var elem = document.getElementById(name);
+                smoothScroll(elem);
+            };
+
+            vm.closeServiceSidenav = function () {
+                console.log("jha - vm.closeServiceSidenav() invoked");
+                $mdSidenav("L9md-services-sidenav-left").toggle()
+                    .then(function () {
+                        // make little "services sidenav" appear.
+                        console.log("jha - in sidenav callback");
+                    });
+            }
         }
     ]);
 })();
