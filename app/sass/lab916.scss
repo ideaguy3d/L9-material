@@ -2,13 +2,16 @@
 $L9-blk: #424242;
 $L9-clr-ylight: #fbed80;
 $L9-clr-ymed: #eccf2f;
-$L9-clr-ydrk: #c4bd14;
+$L9-clr-ydrk: #d4cb00;
 $L9-clr-dkgrey: #52565f;
 $L9-clr-ltgrey: #8C9BAA;
 $L9-clr-red: #b4241a;
+$L9-clr-wp-light-yellow: #fbe269;
 
+$L9-clr-transparent: rgba(0, 0, 0, 0);
+
+//-- other stuff:
 $L9-height5: 500px;
-$L9-transparent: rgba(0, 0, 0, 0);
 $L9-pad-rl-1: 220px;
 $L9-width70: 70%;
 
@@ -114,11 +117,18 @@ h1.L9-hero-h1 {
 	opacity: 0;
 	height: 0;
 	
+	ul:focus {
+		outline: none;
+	}
+	
 	li.L9-link {
+		color: $L9-clr-dkgrey;
 		cursor: pointer;
 		padding: 8px 16px;
 		display: inline-block;
 		transition: all 200ms linear;
+		text-transform: uppercase;
+		font-size: 14px;
 		
 		a {
 			text-decoration: none;
@@ -934,7 +944,7 @@ l9-resource-card {
 	/* Style the links inside the navigation bar */
 	a {
 		float: right;
-		color: #fdb311;
+		color: $L9-clr-ymed;
 		text-align: center;
 		padding: 32px 16px;
 		text-decoration: none;

@@ -79,11 +79,16 @@ h1.L9-hero-h1 {
   top: -125px;
   opacity: 0;
   height: 0; }
+  .L9-temp-drop-down-nav ul:focus {
+    outline: none; }
   .L9-temp-drop-down-nav li.L9-link {
+    color: #52565f;
     cursor: pointer;
     padding: 8px 16px;
     display: inline-block;
-    transition: all 200ms linear; }
+    transition: all 200ms linear;
+    text-transform: uppercase;
+    font-size: 14px; }
     .L9-temp-drop-down-nav li.L9-link a {
       text-decoration: none;
       color: inherit; }
@@ -156,7 +161,7 @@ section.L9-service-puddle-x1 .mr {
       #L9-services-main-sidenav md-sidenav md-content .sub-nav:focus {
         outline: none; }
       #L9-services-main-sidenav md-sidenav md-content .sub-nav:hover {
-        background-color: #c4bd14; }
+        background-color: #d4cb00; }
       #L9-services-main-sidenav md-sidenav md-content .lab-link {
         padding: 4px 8px 4px 20px;
         cursor: pointer;
@@ -166,7 +171,7 @@ section.L9-service-puddle-x1 .mr {
       #L9-services-main-sidenav md-sidenav md-content .lab-link.L9-text-right {
         width: 120px; }
       #L9-services-main-sidenav md-sidenav md-content .lab-link:hover {
-        background-color: #c4bd14; }
+        background-color: #d4cb00; }
       #L9-services-main-sidenav md-sidenav md-content .lab-link.L9-text-right:hover {
         background-color: #b4241a;
         color: #fbed80; }
@@ -357,7 +362,7 @@ div.L9-para, p.L9-para {
     font-size: 22px; }
 
 .L9-sub-footer-translude {
-  color: #c4bd14;
+  color: #d4cb00;
   background-color: whitesmoke;
   padding: 16px; }
 
@@ -449,7 +454,7 @@ div.L9-para, p.L9-para {
   transition: transform 0.2s; }
 
 button#L9-scroll2top {
-  background: #c4bd14; }
+  background: #d4cb00; }
 
 .L9-why-us-nbr {
   padding: 24px;
@@ -521,7 +526,7 @@ section.L9-clients-row {
 .L9-break {
   display: block;
   margin: 4px 0;
-  background-color: #c4bd14;
+  background-color: #d4cb00;
   min-height: 8px; }
 
 .L9br {
@@ -625,7 +630,7 @@ l9-resource-card .L9-resource-card-container {
     display: none; }
   #L9-main-nav.topnav a {
     float: right;
-    color: #fdb311;
+    color: #eccf2f;
     text-align: center;
     padding: 32px 16px;
     text-decoration: none;
