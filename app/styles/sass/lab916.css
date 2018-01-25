@@ -76,7 +76,7 @@ h1.L9-hero-h1 {
   text-align: right;
   padding-right: 32px;
   position: relative;
-  top: -125px;
+  top: -156px;
   opacity: 0;
   height: 0; }
   .L9-temp-drop-down-nav ul:focus {
@@ -136,9 +136,9 @@ section.L9-service-puddle-x1 .mr {
   border: solid 1px #52565f; }
 
 .L9-what-we-do-title {
-  font-weight: 300;
-  font-size: 24px;
-  color: #52565f;
+  font-weight: 500;
+  font-size: 26px;
+  color: #000000;
   line-height: 36px; }
 
 #L9-services-main-sidenav {
@@ -195,9 +195,8 @@ section.L9-service-puddle-x1 .mr {
   padding: 12px; }
 
 h2.L9-h2 {
-  font-weight: 300;
   font-size: 46px;
-  color: #eccf2f; }
+  color: #000000; }
 
 .L9-mar-img {
   margin: 12px 0; }
@@ -354,8 +353,7 @@ p.L9-p-sbs {
   color: #8C9BAA; }
 
 div.L9-para, p.L9-para {
-  color: #52565f;
-  font-weight: 300;
+  color: #000000;
   font-size: 18px;
   line-height: 30px; }
   div.L9-para strong, p.L9-para strong {
@@ -482,10 +480,10 @@ section.L9-clients-row {
   width: 1020px; }
 
 .L9-hero-landing h1.L9-hero-h1 {
-  color: #52565f;
-  font-weight: 300;
-  font-size: 54px;
-  margin-bottom: 0; }
+  color: #000000;
+  font-weight: 500;
+  font-size: 80px;
+  margin-top: -80px; }
 
 .L9-hero-landing p {
   color: #52565f;
@@ -624,17 +622,18 @@ l9-resource-card .L9-resource-card-container {
 #L9-main-nav.topnav {
   background-color: #ffffff;
   overflow: hidden;
-  padding: 24px;
+  padding: 44px 72px 24px 72px;
   /* Style the links inside the navigation bar */ }
   #L9-main-nav.topnav .L9-icon {
     display: none; }
   #L9-main-nav.topnav a {
     float: right;
-    color: #eccf2f;
+    color: #000000;
     text-align: center;
     padding: 32px 16px;
     text-decoration: none;
-    font-size: 17px; }
+    font-size: 17px;
+    font-weight: 400; }
   #L9-main-nav.topnav a.L9-nav-logo {
     float: left;
     padding: 2px; }
@@ -643,9 +642,6 @@ l9-resource-card .L9-resource-card-container {
     @media screen and (max-width: 432px) {
       #L9-main-nav.topnav a.L9-nav-logo small {
         display: none; } }
-  #L9-main-nav.topnav a:hover {
-    background-color: #ddd;
-    color: #434343; }
   #L9-main-nav.topnav a.active {
     background-color: #fdb311;
     color: white; }

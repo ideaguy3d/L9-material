@@ -1,18 +1,12 @@
 <!-- Hero Landing -->
-<section layout="row" layout-xs="column" layout-sm="column" layout-padding layout-align="center center"
+<section layout="row" layout-xs="column" layout-sm="column" layout-align="space-around center"
          class="L9-hero-landing">
-    <div flex-md="80" class="L9-text-left L9-pos-rel L9-hero-landing-inner">
-        <div class="L9-lwrap">
-            <h1 class="L9-hero-h1">Easily optimize Amazon sales processes</h1>
-            <p class="L9-para">{{lab.heroPara}}</p>
-        </div>
+    <div flex flex-gt-xs="45" class="L9-text-left L9-pos-rel L9-hero-landing-inner">
+        <h1 class="L9-hero-h1 L9-text-center">{{lab.slogan}}</h1>
+    </div>
 
-        <img src="http://lab916.wpengine.com/mock2/images/L9-hero.png" alt="img" class="L9-hero-img"
-             width="490px">
-
-        <br><br>
-
-        <button class="L9-btn">GET YOUR FREE ACCOUNT</button>
+    <div flex flex-gt-xs="50">
+        <img src="http://lab916.wpengine.com/img/landing/hero1.jpg" alt="lab hero" width="100%">
     </div>
 </section>
 
@@ -36,7 +30,7 @@
         </div>
 
         <!-- Middle -->
-        <div flex flex-gt-sm="25"  class="L9-text-center" layout-padding layout-margin>
+        <div flex flex-gt-sm="25" class="L9-text-center" layout-padding layout-margin>
             <img ng-src="{{lab.iconAd}}" alt="img" width="95%">
             <div class="L9-para">Advertising</div>
         </div>
@@ -45,6 +39,12 @@
         <div flex flex-gt-sm="25" class="L9-text-center" layout-padding layout-margin>
             <img ng-src="{{lab.iconCm}}" alt="img" width="95%">
             <div class="L9-para">Channel Management</div>
+        </div>
+    </div>
+
+    <div layout="row" layout-align="center center">
+        <div flex="50" class="L9-text-center">
+            <i>Three key elements to make your product rise above the competition</i>
         </div>
     </div>
 </section>
@@ -108,7 +108,7 @@
     </div>
 
     <!-- Right side - img -->
-    <div flex flex-gt-sm="40" >
+    <div flex flex-gt-sm="40">
         <div class="L9-right-sbs-img">
             <img ng-src="{{lab.moMoneyImg}}" alt="img">
         </div>

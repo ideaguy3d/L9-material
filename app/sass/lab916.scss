@@ -1,5 +1,6 @@
 //-- Colors:
-$L9-blk: #424242;
+$L9-clr-lblk: #424242;
+$L9-clr-blk: #000000;
 $L9-clr-ylight: #fbed80;
 $L9-clr-ymed: #eccf2f;
 $L9-clr-ydrk: #d4cb00;
@@ -113,7 +114,7 @@ h1.L9-hero-h1 {
 	text-align: right;
 	padding-right: 32px;
 	position: relative;
-	top: -125px;
+	top: -156px;
 	opacity: 0;
 	height: 0;
 	
@@ -197,9 +198,9 @@ section.L9-service-puddle-x1 {
 }
 
 .L9-what-we-do-title {
-	font-weight: 300;
-	font-size: 24px;
-	color: $L9-clr-dkgrey;
+	font-weight: 500;
+	font-size: 26px;
+	color: $L9-clr-blk;
 	line-height: 36px;
 }
 
@@ -288,9 +289,9 @@ section.L9-service-puddle-x1 {
 }
 
 h2.L9-h2 {
-	font-weight: 300;
+	//font-weight: 300;
 	font-size: 46px;
-	color: $L9-clr-ymed;
+	color: $L9-clr-blk;
 }
 
 .L9-mar-img {
@@ -535,8 +536,7 @@ p.L9-p-sbs {
 }
 
 div.L9-para, p.L9-para {
-	color: $L9-clr-dkgrey;
-	font-weight: 300;
+	color: $L9-clr-blk;
 	font-size: 18px;
 	line-height: 30px;
 	
@@ -738,10 +738,10 @@ section.L9-clients-row {
 	}
 	
 	h1.L9-hero-h1 {
-		color: $L9-clr-dkgrey;
-		font-weight: 300;
-		font-size: 54px;
-		margin-bottom: 0;
+		color: $L9-clr-blk;
+		font-weight: 500;
+		font-size: 80px;
+		margin-top: -80px;
 	}
 	
 	p {
@@ -862,7 +862,7 @@ l9-resource-card {
 }
 
 .L9-footer-container {
-	background: $L9-blk;
+	background: $L9-clr-lblk;
 	/*color: #fdb311;*/
 	color: whitesmoke;
 	
@@ -935,7 +935,7 @@ l9-resource-card {
 #L9-main-nav.topnav {
 	background-color: #ffffff;
 	overflow: hidden;
-	padding: 24px;
+	padding: 44px 72px 24px 72px;
 	
 	.L9-icon {
 		display: none;
@@ -944,11 +944,12 @@ l9-resource-card {
 	/* Style the links inside the navigation bar */
 	a {
 		float: right;
-		color: $L9-clr-ymed;
+		color: $L9-clr-blk;
 		text-align: center;
 		padding: 32px 16px;
 		text-decoration: none;
 		font-size: 17px;
+		font-weight: 400;
 	}
 	
 	a.L9-nav-logo {
@@ -966,16 +967,10 @@ l9-resource-card {
 		}
 	}
 	
-	a:hover {
-		background-color: #ddd;
-		color: #434343;
-	}
-	
 	a.active {
 		background-color: #fdb311;
 		color: white;
 	}
-	
 }
 
 // media query for nav bar

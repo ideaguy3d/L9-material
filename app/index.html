@@ -48,7 +48,7 @@
     <a ui-sref="landing" class="L9-nav-logo">
         <img src="https://static1.squarespace.com/static/58486f891b631beb1bea6ebe/t/5871c70e6b8f5b2a8ee6d964/1500779111862/?format=1500w"
              alt="logo" width="80px">
-        <small>AMAZON OPTIMIZATION SPECIALISTS</small>
+        <small>Amazon Optimization Specialists</small>
     </a>
 
     <a ng-click="ccToggleTempDrop()" class="L9-whyL9-dropdown L9-nav-link L9-nav-link-why-us">
@@ -56,9 +56,10 @@
         <ng-md-icon icon="keyboard_arrow_down"></ng-md-icon>
     </strong>
     </a>
-    <a ui-sref="contact" class="L9-nav-link get-a-quote">GET A QUOTE</a>
+    <a href="http://lab916.wpengine.com/get-a-quote/" class="L9-nav-link get-a-quote">GET A QUOTE</a>
     <a href="http://lab916.wpengine.com/category/case-studies/" class="L9-nav-link">CASE STUDIES</a>
     <a ui-sref="what-we-do" class="L9-nav-link">SERVICES</a>
+    <!-- basic AngularJS material search comp
     <div id="L9-search-bar">
         <md-content class="md-padding">
             <form ng-submit="$event.preventDefault()">
@@ -84,13 +85,15 @@
             </form>
         </md-content>
     </div>
+    -->
+
     <!-- mobile menu button -->
     <a href="javascript:void(0);" onclick="LabMainNavFunction()"
             class="L9-icon">
         <ng-md-icon icon="reorder"></ng-md-icon>
     </a>
 </div>
-<!-- temporary drop down navigation -->
+<!-- temp drop down navigation -->
 <div id="L9-temp2-drop-nav" class="L9-temp-drop-down-nav" ng-class="{'L9-base-temp-drop': ccTempDropAnim}">
     <ul ng-click="ccToggleTempDrop()">
         <li class="L9-link"><a href="#!/why-lab916">Why lab916?</a></li>
@@ -102,7 +105,7 @@
         <li class="L9-link"><a href="#!/careers">Careers</a></li>
     </ul>
 </div>
-
+<!-- navigation bar script -->
 <script type="text/javascript">
     function LabMainNavFunction() {
         console.log("jha - LabMainNavFunction should have been called.");
@@ -116,8 +119,8 @@
 </script>
 
 
-<!-- application entry point -->
-<ui-view autoscroll="true"></ui-view>
+<!-- application entry point // autoscroll="true" -->
+<ui-view></ui-view>
 
 <br>
 
@@ -127,10 +130,11 @@
     <ng-md-icon role="img" aria-hidden="true" icon="keyboard_arrow_up"></ng-md-icon>
 </button>
 
-<!-- footer -->
-<!--<p class="L9-text-center">{{ccShowHomeSubFooter}}</p>-->
+<!-- footer
 <lab-sub-footer ng-if="ccShowHomeSubFooter">Get. More. Sales.</lab-sub-footer>
 <lab-footer></lab-footer>
+-->
+
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>
