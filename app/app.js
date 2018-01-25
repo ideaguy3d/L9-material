@@ -27,12 +27,6 @@ angular.module('L9-app', [
                         }
                     }
                 })
-                .state('contact', {
-                    url: '/contact',
-                    templateUrl: 'states/contact/view.contact.html',
-                    controller: 'uiPracCtrl',
-                    controllerAs: 'ui'
-                })
 
                 //-- WhatWeDoCtrl controlled states:
                 .state('what-we-do', {
@@ -91,20 +85,6 @@ angular.module('L9-app', [
                         }
                     }
                 })
-                .state('case-studies', {
-                    url: '/case-studies',
-                    templateUrl: 'states/case-studies/view.case-studies.html',
-                    controller: 'uiPracCtrl',
-                    controllerAs: 'ui',
-                    resolve: {
-                        homeSubFooterState: function () {
-                            return {
-                                curState: 'content-opt',
-                                mode: true
-                            };
-                        }
-                    }
-                })
 
                 //-- PagesCtrl controlled states:
                 .state('service-puddle1', {
@@ -119,12 +99,6 @@ angular.module('L9-app', [
                     controller: 'PagesCtrl',
                     controllerAs: 'pagesCtrl'
                 })
-                .state('resources', {
-                    url: "/resources",
-                    templateUrl: "states/pages/view.resources.html",
-                    controller: 'PagesCtrl',
-                    controllerAs: 'pagesCtrl'
-                })
                 .state('careers', {
                     url: "/careers",
                     templateUrl: "states/pages/view.career.html",
@@ -136,10 +110,6 @@ angular.module('L9-app', [
                     templateUrl: "states/pages/view.why-us.html",
                     controller: "PagesCtrl",
                     controllerAs: "pagesCtrl"
-                })
-                .state('blog', {
-                    url: "/blog",
-                    templateUrl: "states/pages/view.blog.html"
                 })
                 // -----------------------------------
                 // just to practice various animation

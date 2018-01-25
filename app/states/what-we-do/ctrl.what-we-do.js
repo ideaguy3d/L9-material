@@ -12,8 +12,6 @@
             vm.accountSetup1WeDo = "Over half of all product searches begin on Amazon, which is more than every other search engine combined. To be successful, you need to master the Amazon platform. ";
             vm.accountSetup2WeDo = "We’ll get your account up and running and optimized for maximum sales from the start, so you can make the most of the world’s most powerful marketplace.";
             vm.contentWeDo = "";
-            vm.jenKimQuote = "LAB916 isn’t your typical amateur Amazon marketing agency with zero experience. They actually increase traffic to your listing and more importantly, the vitalness of conversion. If you’re serious about growing your FBA business, give 10 minutes of your time to LAB916."
-            vm.jenKimQuoteAuth = "- Jennifer Kim, Co-Founder @ Seigla Athletica";
 
             vm.l9HeroDown = function () {
                 var elem = document.getElementById("L9-what-we-do-goto");
