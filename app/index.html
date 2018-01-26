@@ -51,12 +51,16 @@
         <small>Amazon Optimization Specialists</small>
     </a>
 
-    <a ng-click="ccToggleTempDrop()" class="L9-whyL9-dropdown L9-nav-link L9-nav-link-why-us">
-        WHY LAB916 <strong><ng-md-icon icon="keyboard_arrow_down"></ng-md-icon></strong>
-    </a>
     <a href="http://lab916.wpengine.com/get-a-quote/" class="L9-nav-link get-a-quote">GET A QUOTE</a>
+    <!-- drop down link -->
+    <a ng-click="ccToggleTempDrop()" class="L9-whyL9-dropdown L9-nav-link L9-nav-link-why-us">
+        SERVICES <strong><ng-md-icon icon="keyboard_arrow_down"></ng-md-icon></strong>
+    </a>
+    <a href="http://lab916.wpengine.com/category/blog/">BLOG</a>
+    <a href="http://lab916.wpengine.com/category/resources/">RESOURCES</a>
+    <a href="#!/uit1">ABOUT US</a>
     <a href="http://lab916.wpengine.com/category/case-studies/" class="L9-nav-link">CASE STUDIES</a>
-    <a ui-sref="what-we-do" class="L9-nav-link">SERVICES</a>
+    <a ui-sref="why-lab916" class="L9-nav-link">WHY LAB916</a>
     <!-- basic AngularJS material search comp
     <div id="L9-search-bar">
         <md-content class="md-padding">
@@ -94,13 +98,11 @@
 <!-- temp drop down navigation -->
 <div id="L9-temp2-drop-nav" class="L9-temp-drop-down-nav" ng-class="{'L9-base-temp-drop': ccTempDropAnim}">
     <ul ng-click="ccToggleTempDrop()">
-        <li class="L9-link"><a href="#!/why-lab916">Why lab916?</a></li>
-        <li class="L9-link"><a href="#!/service-puddle1">service-puddle1</a></li>
-        <li class="L9-link"><a href="#!/service-puddle2">service-puddle2</a></li>
-        <li class="L9-link"><a href="#!/uit1">About Us</a></li>
-        <li class="L9-link"><a href="http://lab916.wpengine.com/category/resources/">Resources</a></li>
-        <li class="L9-link"><a href="http://lab916.wpengine.com/category/blog/">Blog</a></li>
-        <li class="L9-link"><a href="#!/careers">Careers</a></li>
+        <li class="L9-link"><a ui-sref="what-we-do">Services</a></li>
+        <li class="L9-link"><a ui-sref="content-opt">Content Optimization</a></li>
+        <li class="L9-link"><a ui-sref="promote">Advertising</a></li>
+        <li class="L9-link"><a ui-sref="channel-management">Channel Management</a></li>
+        <!--<li class="L9-link"><a href="#!/careers">Careers</a></li>-->
     </ul>
 </div>
 <!-- navigation bar script -->

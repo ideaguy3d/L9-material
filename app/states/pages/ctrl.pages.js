@@ -140,7 +140,6 @@
                 };
 
                 vm.heroScrollDown2 = function () {
-                    console.log("jha - heroScrollDown invoked...");
                     $location.hash("L9-view-row1");
                     $anchorScroll();
                 };
@@ -154,7 +153,7 @@
                     info: {
                         name: "Lab 916 Career's",
                         bg: { // this is being linked to ngStyle attr dir
-                            'background': 'url(http://careerconnections.nj.gov/careerconnections/images/hero/RightCareer-480922793.jpg) no-repeat center/cover'
+                            'background': 'url(http://lab916.wpengine.com/img/career/career.jpg) no-repeat center/cover'
                         },
                         pos: "end start"
                     }

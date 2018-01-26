@@ -13,10 +13,14 @@
             vm.accountSetup2WeDo = "We’ll get your account up and running and optimized for maximum sales from the start, so you can make the most of the world’s most powerful marketplace.";
             vm.contentWeDo = "";
 
+            console.log("What we do Controller activated!!");
+
             vm.l9HeroDown = function () {
                 var elem = document.getElementById("L9-what-we-do-goto");
                 smoothScroll(elem);
             };
+
+            vm.l9HeroDown();
 
             vm.toggleShowContentSubMenu = function () {
                 vm.showContentSubMenu = !vm.showContentSubMenu;
